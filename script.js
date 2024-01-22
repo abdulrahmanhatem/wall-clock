@@ -1,3 +1,9 @@
+
+
+
+
+
+
 let audioPermession = false;
 
 // Waiting user to interact with document
@@ -27,6 +33,7 @@ function updateClock() {
             strikeTwelve()
         }
     }
+
 }
 
 // Play Clock Second tick Sound Effect
@@ -47,6 +54,5 @@ updateClock()
 
 // Update Clock every second
 setInterval(updateClock, 1000);
-
 
 
