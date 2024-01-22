@@ -56,3 +56,16 @@ updateClock()
 setInterval(updateClock, 1000);
 
 
+// Get User City
+function getCity() {
+    let cityElement = document.querySelector(".details .city")
+    let city = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (city) {
+        city = city.split("/");
+        city = city[city.length -1]
+
+        cityElement.innerHTML = city;
+    }
+}
+
+getCity()
