@@ -1,0 +1,274 @@
+
+:root{
+    --black: #000;
+    --grey: #1a1915;
+    --view-ratio: .8rem;
+    --clock-face-radius: -12.3; /* Negetaive value for direction */
+    --hex-nut-radius: 1.6; 
+    --cap-nut-radius: 1; 
+    --hand: .35; 
+}
+body{
+    background-image: linear-gradient(to right bottom, #fff, #cdcdcb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw ;
+    height: 100vh;
+    margin: 0;
+}
+.clock-frame{
+    background-color: #dad7d2;
+    background-image: radial-gradient( #dfdfdf, #e5e5e5);
+    border: calc(1.1 * var(--view-ratio)) solid black;
+    border-radius: 50%;
+    width: calc(30 * var(--view-ratio));
+    height: calc(30 * var(--view-ratio));
+    position: relative;
+    animation: hour-hand 3s 0s ease-in-out infinity normal forwards running;
+    /* animation-name: hour-hand;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    
+}
+.clock-face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.clock-face span{
+    display: block;
+    position: absolute;
+    top: calc(50% - calc(3.3 * var(--view-ratio))/2);
+    left: 50%;
+    width: calc(0.3 * var(--view-ratio));
+    height: calc(3.3 * var(--view-ratio));
+    background-color: var(--black);
+    border-radius: calc(.1 * var(--view-ratio));
+}
+.clock-face span::before{
+    content: '';
+    display: block;
+    width: calc(0.1 * var(--view-ratio));
+    height: calc(4 * var(--view-ratio));
+    background-color: var(--black);
+    position: absolute;
+  
+}
+
+/* Clock Face Hours Section */
+.clock-face span:nth-of-type(1){
+    transform: rotate(30deg) translate(50%, calc(var(--clock-face-radius) * var(--view-ratio))) ;
+}
+.clock-face span:nth-of-type(2){
+    transform: rotate(60deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(3){
+    transform: rotate(90deg) translate(50%, calc(var(--clock-face-radius) * var(--view-ratio))) ;
+}
+.clock-face span:nth-of-type(4){
+    transform: rotate(120deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(5){
+    transform: rotate(150deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(6){
+    transform: rotate(180deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(7){
+    transform: rotate(210deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(8){
+    transform: rotate(2400deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(9){
+    transform: rotate(270deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(10){
+    transform: rotate(300deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(11){
+    transform: rotate(330deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+.clock-face span:nth-of-type(12){
+    transform: rotate(360deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
+}
+
+.clock-face span:nth-of-type(1)::before{
+    transform: rotate(-30deg);
+    top: calc(-0.45 * var(--view-ratio));
+    left: calc(-1.01* var(--view-ratio));
+}
+.clock-face span:nth-of-type(2)::before{
+    transform: rotate(-60deg);
+    top: calc(0.25 * var(--view-ratio));
+    left: calc(-1.75 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(3)::before{
+    transform: rotate(-90deg);
+    top: calc(1.25 * var(--view-ratio));
+    left: calc(-2 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(4)::before{
+    transform: rotate(-120deg);
+    top: calc(2.2 * var(--view-ratio));
+    left: calc(-1.55 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(5)::before{
+    transform: rotate(-150deg);
+    top: calc(2.9 * var(--view-ratio));
+    left: calc(-.85 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(6)::before{
+    transform: rotate(-180deg);
+    top: calc(3.2 * var(--view-ratio));
+    left: calc(0.1 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(7)::before{
+    transform: rotate(-210deg);
+    top: calc(2.8 * var(--view-ratio));
+    left: calc(0.99 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(8)::before{
+    transform: rotate(-240deg);
+    top: calc(2.25 * var(--view-ratio));
+    left: calc(1.75 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(9)::before{
+    transform: rotate(-270deg);
+    top: calc(1.3 * var(--view-ratio));
+    left: calc(2 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(10)::before{
+    transform: rotate(-300deg);
+    top: calc(0.24 * var(--view-ratio));
+    left: calc(1.89 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(11)::before{
+    transform: rotate(-330deg);
+    top: calc(-0.49* var(--view-ratio));
+    left: calc(1.17 * var(--view-ratio));
+}
+.clock-face span:nth-of-type(12)::before{
+    transform: rotate(-360deg);
+    top: calc(-0.8* var(--view-ratio));
+    left: calc(0.1 * var(--view-ratio));
+}
+
+/*Clock Hands Section */
+.clock-hands{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.322);
+}
+.clock-hands > *{
+    position: absolute;
+    
+}
+.clock-hands .hex-nut{
+    top: calc(50% - calc(var(--hex-nut-radius) * var(--view-ratio)) /2);
+    left: calc(50% - calc(var(--hex-nut-radius)  * var(--view-ratio)) /2);
+    width: calc(var(--hex-nut-radius) * var(--view-ratio));
+    height: calc(var(--hex-nut-radius) * var(--view-ratio));
+    background-color: var(--black);
+    border-radius: 50%;
+}
+.clock-hands .cap-nut{
+    top: calc(50% - calc(var(--hex-cup-radius) * var(--view-ratio)) /2);
+    left: calc(50% - calc(var(--hex-cup-radius)  * var(--view-ratio)) /2);
+    width: calc(var(--hex-cup-radius) * var(--view-ratio));
+    height: calc(var(--hex-cup-radius) * var(--view-ratio));
+    background-color: var(--grey);
+}
+
+.clock-hands .hour-hand {
+    display: block;
+    top: calc(50% - calc(4 * var(--view-ratio)) /2);
+    left: calc(50% - calc(4 * var(--view-ratio)) /2);
+    width: calc(4 * var(--view-ratio));
+    height: calc(4* var(--view-ratio));
+    transform: rotateZ(120deg);
+    /* animation:  60s 0s steps(60, start) infinite normal forwards running hour-hand; */
+    
+}
+.clock-hands .hour-hand::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(calc(2 - var(--hand)/2) * var(--view-ratio));
+    width: calc(var(--hand) * var(--view-ratio));
+    height: calc(8* var(--view-ratio));
+    background-color: var(--black);
+}
+
+.clock-hands .minute-hand {
+    display: block;
+    top: calc(50% - calc(4 * var(--view-ratio)) /2);
+    left: calc(50% - calc(4 * var(--view-ratio)) /2);
+    width: calc(4 * var(--view-ratio));
+    height: calc(4* var(--view-ratio));
+    transform: rotateZ(240deg);
+    background-color: rgba(255, 38, 0, 0.322);
+    /* animation:  60s 0s steps(60, start) infinite normal forwards running hour-hand; */
+    
+}
+.clock-hands .minute-hand::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(-1 * var(--view-ratio));
+    left: calc(calc(2 - var(--hand)/2) * var(--view-ratio));
+    width: calc(var(--hand) * var(--view-ratio));
+    height: calc(14.5* var(--view-ratio));
+    background-color: var(--black);
+}
+
+.clock-hands .second-hand {
+    display: block;
+    top: calc(50% - calc(4 * var(--view-ratio)) /2);
+    left: calc(50% - calc(4 * var(--view-ratio)) /2);
+    width: calc(4 * var(--view-ratio));
+    height: calc(4* var(--view-ratio));
+    
+    /* background-color: red; */
+    animation:  60s 0s steps(60, start) infinite normal forwards running hour-hand;
+}
+.clock-hands .second-hand::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(calc(2 - var(--hand)/2) * var(--view-ratio));
+    width: calc(.1 * var(--view-ratio));
+    height: calc(8 * var(--view-ratio));
+    border-right: calc(.1 * var(--view-ratio)) solid transparent;
+    border-left: calc(.1 * var(--view-ratio)) solid transparent;
+    border-top: calc(15 * var(--view-ratio)) solid var(--black);
+}
+.clock-hands .second-hand::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(-3 * var(--view-ratio));
+    left: calc(calc(1.89 - var(--hand)/2) * var(--view-ratio));
+    width: calc(.5 * var(--view-ratio));
+    height: calc(3.5 * var(--view-ratio));
+    background-color: var(--black);
+    border-radius: 0 0 calc(.5 * var(--view-ratio)) calc(.5 * var(--view-ratio)) ;
+}
+
+@keyframes hour-hand {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
