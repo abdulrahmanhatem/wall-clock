@@ -63,9 +63,20 @@ function getCity() {
     if (city) {
         city = city.split("/");
         city = city[city.length -1]
-
         cityElement.innerHTML = city;
     }
 }
 
+// Get Day
+function getDay() {
+    let digit = document.querySelector(".details .day .digit");
+    let name = document.querySelector(".details .day .name");
+    let day = new Date();
+    let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];   
+
+    name.innerHTML = week[day.getDay()].toUpperCase();
+    digit.innerHTML = day.getDate();  
+}
+
 getCity()
+getDay()

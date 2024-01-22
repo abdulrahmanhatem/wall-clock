@@ -18,6 +18,7 @@ body{
     width: 100vw ;
     height: 100vh;
     margin: 0;
+    font-family: "Air American", sans-serif;
 }
 
 .clock-frame{
@@ -161,6 +162,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 .clock-hands > *{
     position: absolute;
@@ -254,3 +256,35 @@ body{
     box-shadow: var(--hand-shadow);
 }
 
+/* Details Styles */
+.details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.details .city{
+    margin-block-start: 6rem;
+    font-size: 1.1rem;
+}
+.details .day{
+    position: absolute;
+    top: 48%;
+    right: 23%;
+    font-size: .6rem;
+    border: 0.1rem solid #e5e5e5;
+    background: #e7e7e7;
+    color: #2d2d2d;
+    display: flex;  
+}
+.details .day > *{
+    padding: 0.2rem;
+    display: inline-block;
+    box-shadow: 1px 2px 3px 0px #b2b2b2 inset;
+}
+.details .day .name{
+    border-inline-end: solid 0.1rem #bbb;
+}
