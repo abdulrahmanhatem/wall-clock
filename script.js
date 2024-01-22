@@ -22,9 +22,8 @@ function updateClock() {
 
     if (audioPermession) {
         tick()
-
-        // hours == 12 && minutes === 0 && seconds === 0
-        if (hours == 12 && minutes === 0 && seconds === 0 ) {
+        
+        if (hours == 12 && minutes === 0 && seconds === 0) {
             strikeTwelve()
         }
     }
@@ -37,7 +36,8 @@ function tick() {
 }
 
 function strikeTwelve() {
-    let strike = new Audio('./audio/strike-twelve.mp3')
+    let strike = new Audio('./audio/strike-twelve.mp3');
+    strike.volume = .1;
     strike.play()
 }
 
