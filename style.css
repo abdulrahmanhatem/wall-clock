@@ -7,6 +7,7 @@
     --hex-nut-radius: 1.6; 
     --cap-nut-radius: 1; 
     --hand: .35; 
+    --hand-shadow: 0px 0px 30px 4px #2f2f2f45;
 }
 body{
     background-image: linear-gradient(to right bottom, #fff, #cdcdcb);
@@ -26,12 +27,7 @@ body{
     width: calc(30 * var(--view-ratio));
     height: calc(30 * var(--view-ratio));
     position: relative;
-    animation: hour-hand 3s 0s ease-in-out infinity normal forwards running;
-    /* animation-name: hour-hand;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal; */
-    
+    box-shadow: 0px 0px 34px 11px #2f2f2f45, 11px -1px 34px 11px #2f2f2f45 inset;
 }
 .clock-face{
     width: 100%;
@@ -191,10 +187,6 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-
-    /* animation:  86400s 0s steps(86400, start) infinite normal forwards running hour-hand; */
-
-    
 }
 .clock-hands .hour-hand::after {
     content: "";
@@ -206,16 +198,14 @@ body{
     height: calc(8* var(--view-ratio));
     background-color: var(--black);
     box-shadow: 0px 0px 1px var(--black);
+    box-shadow: var(--hand-shadow);
 }
-
 .clock-hands .min-hand {
     display: block;
     top: calc(50% - calc(4 * var(--view-ratio)) /2);
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-
-    /* animation:  3600s 0s steps(3600, start) infinite normal forwards running hour-hand; */
 }
 .clock-hands .min-hand::after {
     content: "";
@@ -227,17 +217,14 @@ body{
     height: calc(14.5* var(--view-ratio));
     background-color: var(--black);
     box-shadow: 0px 0px 1px var(--black);
+    box-shadow: var(--hand-shadow);
 }
-
 .clock-hands .second-hand {
     display: block;
     top: calc(50% - calc(4 * var(--view-ratio)) /2);
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-
-
-    /* animation: 60s steps(60, start) infinite normal forwards running hour-hand; */
 }
 .clock-hands .second-hand::after {
     content: "";
@@ -246,12 +233,11 @@ body{
     top: 0;
     left: calc(calc(2 - var(--hand)/2) * var(--view-ratio));
     width: calc(.1 * var(--view-ratio));
-    height: calc(8 * var(--view-ratio));
+    height: calc(.1 * var(--view-ratio));
     border-right: calc(.1 * var(--view-ratio)) solid transparent;
     border-left: calc(.1 * var(--view-ratio)) solid transparent;
-    border-top: calc(15 * var(--view-ratio)) solid var(--black);
-
-    
+    border-top: calc(15 * var(--view-ratio)) solid var(--black);   
+    box-shadow: var(--hand-shadow);
 }
 .clock-hands .second-hand::before {
     content: "";
@@ -264,15 +250,6 @@ body{
     background-color: var(--black);
     border-radius: 0 0 calc(.5 * var(--view-ratio)) calc(.5 * var(--view-ratio)) ;
     box-shadow: 0px 0px 1px var(--black);
-}
-
-@keyframes hour-hand {
-    0% {
-        transform: rotateZ(0deg);
-    }
-
-    100% {
-        transform: rotateZ(360deg);
-    }
+    box-shadow: var(--hand-shadow);
 }
 
