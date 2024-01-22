@@ -1,3 +1,10 @@
+let audioPermession = false;
+
+addEventListener('click', e => {
+    audioPermession = true;
+});
+
+
 function updateClock() {
     let time = new Date();
     let hours = time.getHours() > 12 ? (time.getHours() - 12) : time.getHours() ;
@@ -8,10 +15,38 @@ function updateClock() {
     let minuteHand = document.querySelector('.min-hand');
     let secondHand = document.querySelector('.second-hand');
 
-    hourHand.style.rotate = `0 0 1 ${(hours*30) -180 + (minutes*30 /60) }deg`;
-    minuteHand.style.rotate = `0 0 1 ${(minutes *6) -180 + (seconds*6 /60)}deg`;
-    secondHand.style.rotate = `0 0 1 ${(seconds *6) -180}deg`;
+    // update clock hands
+    hourHand.style.rotate = `0 0 1 ${(hours*30) - 180 + (minutes*30 /60) }deg`;
+    minuteHand.style.rotate = `0 0 1 ${(minutes *6) - 180 + (seconds*6 /60)}deg`;
+    secondHand.style.rotate = `0 0 1 ${(seconds *6) - 180}deg`;
+
+    if (audioPermession) {
+        tick()
+
+        // hours == 12 && minutes === 0 && seconds === 0
+        if (hours == 12 && minutes === 0 && seconds === 0 ) {
+            strikeTwelve()
+        }
+    }
 }
 
-setInterval(updateClock, 1000)
+// Add Sound Effects
+function tick() {
+    let tick = new Audio('./audio/tick.mp3'); 
+    tick.play()
+}
+
+function strikeTwelve() {
+    let strike = new Audio('./audio/strike-twelve.mp3')
+    strike.play()
+}
+
+
+// Initiate clock hands before interval
+updateClock()
+
+// Update Clock every second
+setInterval(updateClock, 1000);
+
+
 
