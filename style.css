@@ -191,8 +191,8 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-    transform: rotateZ(120deg);
-    animation:  86400s 0s steps(86400, start) infinite normal forwards running hour-hand;
+
+    /* animation:  86400s 0s steps(86400, start) infinite normal forwards running hour-hand; */
 
     
 }
@@ -208,19 +208,16 @@ body{
     box-shadow: 0px 0px 1px var(--black);
 }
 
-.clock-hands .minute-hand {
+.clock-hands .min-hand {
     display: block;
     top: calc(50% - calc(4 * var(--view-ratio)) /2);
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-    transform: rotateZ(240deg);
-    /* background-color: rgba(255, 38, 0, 0.322); */
-    animation:  3600s 0s steps(3600, start) infinite normal forwards running hour-hand;
 
-    
+    /* animation:  3600s 0s steps(3600, start) infinite normal forwards running hour-hand; */
 }
-.clock-hands .minute-hand::after {
+.clock-hands .min-hand::after {
     content: "";
     display: block;
     position: absolute;
@@ -238,7 +235,9 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
-    animation: 60s steps(60, start) infinite normal forwards running hour-hand;
+
+
+    /* animation: 60s steps(60, start) infinite normal forwards running hour-hand; */
 }
 .clock-hands .second-hand::after {
     content: "";
