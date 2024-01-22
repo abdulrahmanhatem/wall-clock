@@ -2,6 +2,7 @@
 :root{
     --black: #000;
     --grey: #1a1915;
+    --off-white: #dad7d2;
     --view-ratio: .8rem;
     --clock-face-radius: -12.3; /* Negetaive value for direction */
     --hex-nut-radius: 1.6; 
@@ -20,8 +21,8 @@ body{
 }
 
 .clock-frame{
-    background-color: #dad7d2;
-    background-image: radial-gradient( #dfdfdf, #e5e5e5);
+    background-color: var(--off-white);
+    background-image: radial-gradient( var(--off-white), #e5e5e5);
     border: calc(1.1 * var(--view-ratio)) solid black;
     border-radius: 50%;
     width: calc(30 * var(--view-ratio));
