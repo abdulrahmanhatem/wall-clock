@@ -1,9 +1,9 @@
 let audioPermession = false;
 
+// Waiting user to interact with document
 addEventListener('click', e => {
     audioPermession = true;
 });
-
 
 function updateClock() {
     let time = new Date();
@@ -22,25 +22,25 @@ function updateClock() {
 
     if (audioPermession) {
         tick()
-        
+
         if (hours == 12 && minutes === 0 && seconds === 0) {
             strikeTwelve()
         }
     }
 }
 
-// Add Sound Effects
+// Play Clock Second tick Sound Effect
 function tick() {
     let tick = new Audio('./audio/tick.mp3'); 
     tick.play()
 }
 
+// Play clock Strike twelve Sound Effect
 function strikeTwelve() {
     let strike = new Audio('./audio/strike-twelve.mp3');
     strike.volume = .1;
     strike.play()
 }
-
 
 // Initiate clock hands before interval
 updateClock()
