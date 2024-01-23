@@ -26,16 +26,19 @@ function updateClock() {
     minuteHand.style.rotate = `0 0 1 ${(minutes *6) - 180 + (seconds*6 /60)}deg`;
     secondHand.style.rotate = `0 0 1 ${(seconds *6) - 180}deg`;
 
+    let strikeCondition = (hours === 12 || hours === 0) && minutes === 0 && seconds === 0;
+
     if (audioPermession) {
         tick()
 
-        if (hours == 12 && minutes === 0 && seconds === 0) {
+        if (strikeCondition) {
             strikeTwelve()
         }
     }
+    console.log(strikeCondition);
 
     // Update Details every 12 hours
-    if (hours == 12 && minutes === 0 && seconds === 0) {
+    if (strikeCondition) {
         getDetails()
     }   
 }
