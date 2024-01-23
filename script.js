@@ -53,9 +53,6 @@ function strikeTwelve() {
     strike.play()
 }
 
-// Initiate clock hands before interval
-updateClock()
-
 // Update Clock every second
 setInterval(updateClock, 1000);
 
@@ -86,3 +83,9 @@ function getDetails() {
     getCity()
     getDay()
 }
+
+// Initiate clock hands before interval
+updateClock()
+
+// Initiate Details before interval
+getDetails()
