@@ -34,6 +34,10 @@ function updateClock() {
         }
     }
 
+    // Update Details every 12 hours
+    if (hours == 12 && minutes === 0 && seconds === 0) {
+        getDetails()
+    }   
 }
 
 // Play Clock Second tick Sound Effect
@@ -54,7 +58,6 @@ updateClock()
 
 // Update Clock every second
 setInterval(updateClock, 1000);
-
 
 // Get User City
 function getCity() {
@@ -78,5 +81,8 @@ function getDay() {
     digit.innerHTML = day.getDate();  
 }
 
-getCity()
-getDay()
+// Get Details
+function getDetails() {
+    getCity()
+    getDay()
+}
