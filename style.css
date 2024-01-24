@@ -287,4 +287,18 @@ body{
 }
 .details .day .name{
     border-inline-end: solid 0.1rem #bbb;
+    font-weight: 600;
+}
+
+/* Style Options */
+.audio-option {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    height: 2rem;
+    width: 2rem;
+}
+.audio-option img {
+    max-width: 1.2rem;
+    cursor: pointer;
 }

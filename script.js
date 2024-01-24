@@ -1,4 +1,4 @@
-
+let audio = document.querySelector(".audio-option img");
 
 
 
@@ -26,19 +26,18 @@ function updateClock() {
     minuteHand.style.rotate = `0 0 1 ${(minutes *6) - 180 + (seconds*6 /60)}deg`;
     secondHand.style.rotate = `0 0 1 ${(seconds *6) - 180}deg`;
 
-    let strikeCondition = (hours === 12 || hours === 0) && minutes === 0 && seconds === 0;
+    let isTwelve = (hours === 12 || hours === 0) && minutes === 0 && seconds === 0;
 
     if (audioPermession) {
         tick()
 
-        if (strikeCondition) {
+        if (isTwelve) {
             strikeTwelve()
         }
     }
-    console.log(strikeCondition);
 
     // Update Details every 12 hours
-    if (strikeCondition) {
+    if (isTwelve) {
         getDetails()
     }   
 }
@@ -55,9 +54,6 @@ function strikeTwelve() {
     strike.volume = .1;
     strike.play()
 }
-
-// Update Clock every second
-setInterval(updateClock, 1000);
 
 // Get User City
 function getCity() {
@@ -86,6 +82,32 @@ function getDetails() {
     getCity()
     getDay()
 }
+
+// Toggle Audio Permission
+function changeAudioPermission() {
+    let audioSrc = audio.getAttribute("src");
+
+    audioPermession = !audioPermession;
+
+    
+    if (audioPermession) {
+        audioSrc = "icons/volume.svg";
+        
+        
+    }else{
+        audioSrc = "icons/volume-slash.svg";
+    }
+    
+    console.log(!false);
+}
+
+
+
+audio.addEventListener("click", () => changeAudioPermission())
+
+
+// Update Clock every second
+setInterval(updateClock, 1000);
 
 // Initiate clock hands before interval
 updateClock()
