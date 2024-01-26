@@ -20,7 +20,6 @@ body{
     margin: 0;
     font-family: "Air American", sans-serif;
 }
-
 .clock-frame{
     background-color: var(--off-white);
     background-image: radial-gradient( var(--off-white), #e5e5e5);
