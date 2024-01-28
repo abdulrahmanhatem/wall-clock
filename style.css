@@ -45,8 +45,7 @@ body{
     background-color: var(--black);
     border-radius: calc(.1 * var(--view-ratio));
 }
-.clock-face span::before{
-    content: '';
+.clock-face span .line{
     display: block;
     width: calc(0.1 * var(--view-ratio));
     height: calc(4 * var(--view-ratio));
@@ -55,104 +54,54 @@ body{
   
 }
 
-/* Clock Face Hours Section */
-.clock-face span:nth-of-type(1){
-    transform: rotate(30deg) translate(50%, calc(var(--clock-face-radius) * var(--view-ratio))) ;
-}
-.clock-face span:nth-of-type(2){
-    transform: rotate(60deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(3){
-    transform: rotate(90deg) translate(50%, calc(var(--clock-face-radius) * var(--view-ratio))) ;
-}
-.clock-face span:nth-of-type(4){
-    transform: rotate(120deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(5){
-    transform: rotate(150deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(6){
-    transform: rotate(180deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(7){
-    transform: rotate(210deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(8){
-    transform: rotate(2400deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(9){
-    transform: rotate(270deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(10){
-    transform: rotate(300deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(11){
-    transform: rotate(330deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-.clock-face span:nth-of-type(12){
-    transform: rotate(360deg) translate(50%,  calc(var(--clock-face-radius) * var(--view-ratio)));
-}
-
-.clock-face span:nth-of-type(1)::before{
-    transform: rotate(-30deg);
+/* .clock-face span:nth-of-type(1) .line{
     top: calc(-0.45 * var(--view-ratio));
     left: calc(-1.01* var(--view-ratio));
 }
-.clock-face span:nth-of-type(2)::before{
-    transform: rotate(-60deg);
+.clock-face span:nth-of-type(2) .line{
     top: calc(0.25 * var(--view-ratio));
     left: calc(-1.75 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(3)::before{
-    transform: rotate(-90deg);
+.clock-face span:nth-of-type(3) .line{
     top: calc(1.25 * var(--view-ratio));
     left: calc(-2 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(4)::before{
-    transform: rotate(-120deg);
+.clock-face span:nth-of-type(4) .line{
     top: calc(2.2 * var(--view-ratio));
     left: calc(-1.55 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(5)::before{
-    transform: rotate(-150deg);
+.clock-face span:nth-of-type(5) .line{
     top: calc(2.9 * var(--view-ratio));
     left: calc(-.85 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(6)::before{
-    transform: rotate(-180deg);
+.clock-face span:nth-of-type(6) .line{
     top: calc(3.2 * var(--view-ratio));
     left: calc(0.1 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(7)::before{
-    transform: rotate(-210deg);
+.clock-face span:nth-of-type(7) .line{
     top: calc(2.8 * var(--view-ratio));
     left: calc(0.99 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(8)::before{
-    transform: rotate(-240deg);
+.clock-face span:nth-of-type(8) .line{
     top: calc(2.25 * var(--view-ratio));
     left: calc(1.75 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(9)::before{
-    transform: rotate(-270deg);
+.clock-face span:nth-of-type(9) .line{
     top: calc(1.3 * var(--view-ratio));
     left: calc(2 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(10)::before{
-    transform: rotate(-300deg);
+.clock-face span:nth-of-type(10) .line{
     top: calc(0.24 * var(--view-ratio));
     left: calc(1.89 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(11)::before{
-    transform: rotate(-330deg);
+.clock-face span:nth-of-type(11) .line{
     top: calc(-0.49* var(--view-ratio));
     left: calc(1.17 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(12)::before{
-    transform: rotate(-360deg);
+.clock-face span:nth-of-type(12) .line{
     top: calc(-0.8* var(--view-ratio));
     left: calc(0.1 * var(--view-ratio));
-}
+} */
 
 /*Clock Hands Section */
 .clock-hands{
