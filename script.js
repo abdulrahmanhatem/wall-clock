@@ -6,40 +6,35 @@ for (let n = 0; n < 12; n++) {
     let deg = n *30; 
 
     let docStyles = window.getComputedStyle(document.body);    
-    let clockFaceRadius = docStyles.getPropertyValue("--clock-face-radius");
+    let clockRadius = docStyles.getPropertyValue("--clock-frame-radius");
     let viewRatio = docStyles.getPropertyValue("--view-ratio");
+    let unit = viewRatio.replace(/[^a-z]/gi, "");
 
-    // let unit = parseFloat(viewRatio)
-    // console.log(unit.match(/\D/)[0]);
-
-     console.log(clockFaceRadius * parseFloat(viewRatio));
-    let translate = `${50}%, ${clockFaceRadius * parseFloat(viewRatio)}rem`;
-
+    let translate = `${50}%, ${clockRadius * parseFloat(viewRatio) + unit}`;
     let line = document.createElement("span");
-    
     line.classList.add("line");
 
+    let lineHeight = line.style;
 
-    // console.log(line.style.height);
     line.style.rotate = `0 0 1 ${-deg}deg`;
     line.style.top = `calc(4 * var(--view-ratio))`;
     line.style.left = 0;
 
 
 
-
+    console.log(lineHeight);
 
 
     // line.style.top = `calc(${Math.sin(deg)} * var(--view-ratio))`;
     // line.style.left = `calc(- var(--view-ratio))`;
  
-    number.appendChild(line);
+    // number.appendChild(line);
 
     
-    // number.style.rotate = `0 0 1 ${deg}deg`;
+    number.style.rotate = `0 0 1 ${deg}deg`;
     // number.style.translate = translate;
 
-    number.style.transform = `rotate(${deg}deg) translate(${translate})`;
+    // number.style.transform = `rotate(${deg}deg) translate(${translate})`;
 
     clockFace.appendChild(number)
 }
