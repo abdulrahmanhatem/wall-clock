@@ -41,7 +41,6 @@ body{
     top: calc(50% - calc(3.3 * var(--view-ratio))/2);
     left: 50%;
     width: calc(0.3 * var(--view-ratio));
-    height: calc(3.3 * var(--view-ratio));
     background-color: var(--black);
     border-radius: calc(.1 * var(--view-ratio));
 }
