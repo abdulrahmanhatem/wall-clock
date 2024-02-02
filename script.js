@@ -1,11 +1,13 @@
 
 let clockFace = document.querySelector(".clock-face");
-let docStyles = window.getComputedStyle(document.body);    
-let clockRadius = docStyles.getPropertyValue("--clock-frame-radius");
+let docStyles = window.getComputedStyle(document.body);   
 let viewRatio = docStyles.getPropertyValue("--view-ratio");
-let unit = viewRatio.replace(/[^a-z]/gi, "");
+let unit = viewRatio.replace(/[^a-z]/gi, ""); 
+let frameRadius = docStyles.getPropertyValue("--clock-frame-radius");
 
 viewRatio = parseFloat(viewRatio) ;
+clockRadius = frameRadius * parseFloat(viewRatio)+ unit;
+console.log("Clock Radius" , clockRadius);
 
 for (let n = 0; n < 12; n++) {
 
@@ -20,7 +22,9 @@ for (let n = 0; n < 12; n++) {
 
     
 
-    let translate = `${50}%, ${clockRadius * parseFloat(viewRatio) + unit}`;
+    // let translate = `${50 }%, ${-4 * clockRadius}`;
+
+    let translate = .5 *  clockRadius;
     let line = document.createElement("span");
     line.classList.add("line");
 
@@ -34,7 +38,7 @@ for (let n = 0; n < 12; n++) {
     // line.style.top = `calc(${Math.sin(deg)} * var(--view-ratio))`;
     // line.style.left = `calc(- var(--view-ratio))`;
  
-    // number.appendChild(line);
+    number.appendChild(line);
 
 
 
