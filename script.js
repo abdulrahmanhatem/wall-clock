@@ -4,11 +4,10 @@ let docStyles = window.getComputedStyle(document.body);
 let viewRatio = docStyles.getPropertyValue("--view-ratio");
 let frameRadius = docStyles.getPropertyValue("--clock-frame-radius");
 let unit = viewRatio.replace(/[^a-z]/gi, ""); 
-
-
 viewRatio = parseFloat(viewRatio) ;
-clockRadius = frameRadius * parseFloat(viewRatio)+ unit;
-console.log("Clock Radius" , clockRadius);
+
+clockRadius = frameRadius * parseFloat(viewRatio);
+
 
 for (let n = 0; n < 12; n++) {
 
@@ -17,17 +16,17 @@ for (let n = 0; n < 12; n++) {
 
     let deg = n *30; 
 
-    
+    console.log("Clock Radius" , clockRadius);
 
-    // console.log(clockRadius * parseFloat(viewRatio) + unit);
+    let translate = 0.8 * clockRadius + unit;
 
-    
+    console.log(translate);
 
     // let translate = `${50 }%, ${-4 * clockRadius}`;
 
-    // console.log(clockRadius);
 
-    let translate = clockRadius;
+    
+
     let line = document.createElement("span");
     line.classList.add("line");
 
