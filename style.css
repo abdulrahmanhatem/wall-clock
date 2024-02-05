@@ -4,7 +4,7 @@
     --grey: #1a1915;
     --off-white: #dad7d2;
     --view-ratio: .8rem;
-    --clock-frame-radius: 30; /* Negetaive value for direction */
+    --clock-frame-radius: 15; /* Negetaive value for direction */
     --hex-nut-radius: 1.6; 
     --cap-nut-radius: 1; 
     --hand: .35; 
@@ -25,8 +25,8 @@ body{
     background-image: radial-gradient( var(--off-white), #e5e5e5);
     border: calc(1.1 * var(--view-ratio)) solid black;
     border-radius: 50%;
-    width: calc(var(--clock-frame-radius) * var(--view-ratio));
-    height: calc(var(--clock-frame-radius) * var(--view-ratio));
+    width: calc(2* var( --clock-frame-radius) * var(--view-ratio));
+    height: calc(2* var( --clock-frame-radius) * var(--view-ratio));
     position: relative;
     box-shadow: 0px 0px 34px 11px #2f2f2f45, 11px -1px 34px 11px #2f2f2f45 inset;
 }
