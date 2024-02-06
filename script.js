@@ -12,43 +12,18 @@ clockRadius = frameRadius * parseFloat(viewRatio);
 for (let n = 0; n < 12; n++) {
 
     let number = document.createElement("span");
-    number.style.height = `${0.11 * clockRadius * viewRatio}${unit}` ;
-
-    let deg = n *30; 
-
-    console.log("Clock Radius" , clockRadius);
-
-    let translate = 0.8 * clockRadius + unit;
-
-    console.log(translate);
-
-    // let translate = `${50 }%, ${-4 * clockRadius}`;
-
-
-    
+    let numbertHeight = number.style.height = 0.25 * clockRadius * viewRatio + unit ;
+    let deg = n *30 -90; 
+    let translate = `45% ,${0.8 * clockRadius + unit}`;   
+    number.style.transform = `rotate(${deg}deg) translate(${translate})`;
 
     let line = document.createElement("span");
     line.classList.add("line");
-
-    let lineHeight = line.style;
-
     line.style.rotate = `0 0 1 ${-deg}deg`;
-    line.style.top = `calc(4 * var(--view-ratio))`;
-    line.style.left = 0;
 
-
-    // line.style.top = `calc(${Math.sin(deg)} * var(--view-ratio))`;
-    // line.style.left = `calc(- var(--view-ratio))`;
- 
     number.appendChild(line);
-
-
-
-    number.style.transform = `rotate(${deg}deg) translate(${translate})`;
-
     clockFace.appendChild(number)
 
-    console.log(number.style.height)
 }
 
 

@@ -53,7 +53,7 @@ body{
   
 }
 
-/* .clock-face span:nth-of-type(1) .line{
+.clock-face span:nth-of-type(1) .line{
     top: calc(-0.45 * var(--view-ratio));
     left: calc(-1.01* var(--view-ratio));
 }
@@ -100,7 +100,7 @@ body{
 .clock-face span:nth-of-type(12) .line{
     top: calc(-0.8* var(--view-ratio));
     left: calc(0.1 * var(--view-ratio));
-} */
+}
 
 /*Clock Hands Section */
 .clock-hands{
