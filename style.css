@@ -41,63 +41,75 @@ body{
     top: calc(50% - calc(3.3 * var(--view-ratio))/2);
     left: 50%;
     width: calc(0.3 * var(--view-ratio));
+    height: calc(3.3 * var(--view-ratio));
     background-color: var(--black);
     border-radius: calc(.1 * var(--view-ratio));
 }
-.clock-face span .line{
+.clock-face span::before{
+    content: '';
     display: block;
     width: calc(0.1 * var(--view-ratio));
     height: calc(4 * var(--view-ratio));
     background-color: var(--black);
-    position: absolute;
-  
+    position: absolute; 
 }
-
-.clock-face span:nth-of-type(1) .line{
+.clock-face span:nth-of-type(1)::before{
+    transform: rotate(0deg);
     top: calc(-0.45 * var(--view-ratio));
     left: calc(-1.01* var(--view-ratio));
 }
-.clock-face span:nth-of-type(2) .line{
+.clock-face span:nth-of-type(2)::before{
+    transform: rotate(30deg);
     top: calc(0.25 * var(--view-ratio));
     left: calc(-1.75 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(3) .line{
+.clock-face span:nth-of-type(3)::before{
+    transform: rotate(-90deg);
     top: calc(1.25 * var(--view-ratio));
     left: calc(-2 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(4) .line{
+.clock-face span:nth-of-type(4)::before{
+    transform: rotate(-120deg);
     top: calc(2.2 * var(--view-ratio));
     left: calc(-1.55 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(5) .line{
+.clock-face span:nth-of-type(5)::before{
+    transform: rotate(-150deg);
     top: calc(2.9 * var(--view-ratio));
     left: calc(-.85 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(6) .line{
+.clock-face span:nth-of-type(6)::before{
+    transform: rotate(-180deg);
     top: calc(3.2 * var(--view-ratio));
     left: calc(0.1 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(7) .line{
+.clock-face span:nth-of-type(7)::before{
+    transform: rotate(-210deg);
     top: calc(2.8 * var(--view-ratio));
     left: calc(0.99 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(8) .line{
+.clock-face span:nth-of-type(8)::before{
+    transform: rotate(-240deg);
     top: calc(2.25 * var(--view-ratio));
     left: calc(1.75 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(9) .line{
+.clock-face span:nth-of-type(9)::before{
+    transform: rotate(-270deg);
     top: calc(1.3 * var(--view-ratio));
     left: calc(2 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(10) .line{
+.clock-face span:nth-of-type(10)::before{
+    transform: rotate(-300deg);
     top: calc(0.24 * var(--view-ratio));
     left: calc(1.89 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(11) .line{
+.clock-face span:nth-of-type(11)::before{
+    transform: rotate(-330deg);
     top: calc(-0.49* var(--view-ratio));
     left: calc(1.17 * var(--view-ratio));
 }
-.clock-face span:nth-of-type(12) .line{
+.clock-face span:nth-of-type(12)::before{
+    transform: rotate(-360deg);
     top: calc(-0.8* var(--view-ratio));
     left: calc(0.1 * var(--view-ratio));
 }

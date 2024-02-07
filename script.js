@@ -1,33 +1,15 @@
 
 let clockFace = document.querySelector(".clock-face");
-let docStyles = window.getComputedStyle(document.body);   
-let viewRatio = docStyles.getPropertyValue("--view-ratio");
-let frameRadius = docStyles.getPropertyValue("--clock-frame-radius");
-let unit = viewRatio.replace(/[^a-z]/gi, ""); 
-viewRatio = parseFloat(viewRatio) ;
-
-clockRadius = frameRadius * parseFloat(viewRatio);
-
 
 for (let n = 0; n < 12; n++) {
-
     let number = document.createElement("span");
-    let numbertHeight = number.style.height = 0.25 * clockRadius * viewRatio + unit ;
     let deg = n *30; 
-    let translate = `45% ,${0.8 * clockRadius + unit}`;   
+    let translate = `50%,  calc(var(--clock-frame-radius) * var(--view-ratio))`;
+
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
 
-    let line = document.createElement("span");
-    line.classList.add("line");
-    line.style.rotate = `0 0 1 ${-deg}deg`;
-
-    number.appendChild(line);
     clockFace.appendChild(number)
 }
-
-number.appendChild(line);
-    clockFace.appendChild(number)
-
 
 
 let audio = document.querySelector(".audio-option img");
