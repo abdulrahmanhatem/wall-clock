@@ -13,7 +13,7 @@ for (let n = 0; n < 12; n++) {
 
     let number = document.createElement("span");
     let numbertHeight = number.style.height = 0.25 * clockRadius * viewRatio + unit ;
-    let deg = n *30 -90; 
+    let deg = n *30; 
     let translate = `45% ,${0.8 * clockRadius + unit}`;   
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
 
@@ -25,6 +25,9 @@ for (let n = 0; n < 12; n++) {
     clockFace.appendChild(number)
 
 }
+
+number.appendChild(line);
+    clockFace.appendChild(number)
 
 
 
