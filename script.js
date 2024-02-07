@@ -23,7 +23,6 @@ for (let n = 0; n < 12; n++) {
 
     number.appendChild(line);
     clockFace.appendChild(number)
-
 }
 
 
