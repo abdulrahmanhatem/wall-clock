@@ -88,16 +88,14 @@ function getDetails() {
 // Toggle Audio Permission
 function changeAudioPermission() {
     audioPermession = !audioPermession;  
+    audioIcon.classList.toggle("active");
     if (audioPermession) {
         audioIcon.setAttribute("src", "icons/volume.svg");
     }else{
         audioIcon.setAttribute("src", "icons/volume-slash.svg");
+        
     }
-
 }
-
-
-
 audioIcon.addEventListener("click", () => changeAudioPermission())
 
 

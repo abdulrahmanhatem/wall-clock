@@ -261,3 +261,17 @@ body{
     max-width: 1.2rem;
     cursor: pointer;
 }
+.audio-option img.active {
+    animation: scale-audio 1s ease-in-out infinite;
+}
+@keyframes scale-audio {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
