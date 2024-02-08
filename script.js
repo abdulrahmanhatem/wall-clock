@@ -4,7 +4,7 @@ let clockFace = document.querySelector(".clock-face");
 for (let n = 0; n < 12; n++) {
     let number = document.createElement("span");
     let deg = n *30; 
-    let translate = `50%,  calc(var(--clock-frame-radius) * var(--view-ratio))`;
+    let translate = `50%,  calc(12.7 * var(--view-ratio))`;
 
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
 
