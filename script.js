@@ -1,29 +1,17 @@
 
 let clockFace = document.querySelector(".clock-face");
+let audioIcon = document.querySelector(".audio-option img");
+let audioPermession = false;
 
+//Create Clock numbers signs
 for (let n = 0; n < 12; n++) {
     let number = document.createElement("span");
     let deg = n *30; 
     let translate = `50%,  calc(12.7 * var(--view-ratio))`;
-
+    // Rotate and translate number sign from the center
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
-
     clockFace.appendChild(number)
 }
-
-
-let audio = document.querySelector(".audio-option img");
-
-
-
-
-
-let audioPermession = false;
-
-// Waiting user to interact with document
-addEventListener('click', e => {
-    audioPermession = true;
-});
 
 function updateClock() {
     let time = new Date();
@@ -99,25 +87,18 @@ function getDetails() {
 
 // Toggle Audio Permission
 function changeAudioPermission() {
-    let audioSrc = audio.getAttribute("src");
-
-    audioPermession = !audioPermession;
-
-    
+    audioPermession = !audioPermession;  
     if (audioPermession) {
-        audioSrc = "icons/volume.svg";
-        
-        
+        audioIcon.setAttribute("src", "icons/volume.svg");
     }else{
-        audioSrc = "icons/volume-slash.svg";
+        audioIcon.setAttribute("src", "icons/volume-slash.svg");
     }
-    
-    console.log(!false);
+
 }
 
 
 
-audio.addEventListener("click", () => changeAudioPermission())
+audioIcon.addEventListener("click", () => changeAudioPermission())
 
 
 // Update Clock every second
