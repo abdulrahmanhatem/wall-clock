@@ -94,9 +94,10 @@ function changeAudioPermission() {
     audioIcon.classList.toggle("active");
     if (audioPermession) {
         audioIcon.setAttribute("src", "icons/volume.svg");
+        audioIcon.setAttribute("title", "Turn Off Audio");
     }else{
         audioIcon.setAttribute("src", "icons/volume-slash.svg");
-        
+        audioIcon.setAttribute("title", "Turn On Audio");       
     }
 }
 audioIcon.addEventListener("click", () => changeAudioPermission())
