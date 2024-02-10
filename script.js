@@ -17,9 +17,8 @@ function updateClock() {
     let time = new Date();
     let hours = time.getHours() > 12 ? (time.getHours() - 12) : time.getHours() ;
     let minutes = time.getMinutes();
-    // let seconds = time.getSeconds();
+    let seconds = time.getSeconds();
 
-    let seconds = 15;
     let hourHand = document.querySelector('.hour-hand');
     let minuteHand = document.querySelector('.min-hand');
     let secondHand = document.querySelector('.second-hand');

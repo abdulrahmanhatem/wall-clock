@@ -149,6 +149,7 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
+    z-index: 2;
 }
 .clock-hands .hour-hand::after {
     content: "";
@@ -168,6 +169,7 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
+    z-index: 2;
 }
 .clock-hands .min-hand::after {
     content: "";
