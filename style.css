@@ -274,7 +274,7 @@ body{
 }
 .popup {
     position: absolute;
-    top: -2rem;
+    top: calc(-2.2 * var(--view-ratio));
     right: 0;
     animation: scale-pulse 1s ease-in-out 10;
     display: block;
