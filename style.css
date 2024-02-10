@@ -187,6 +187,7 @@ body{
     left: calc(50% - calc(4 * var(--view-ratio)) /2);
     width: calc(4 * var(--view-ratio));
     height: calc(4* var(--view-ratio));
+    z-index: 2;
 }
 .clock-hands .second-hand::after {
     content: "";
@@ -200,6 +201,7 @@ body{
     border-left: calc(.1 * var(--view-ratio)) solid transparent;
     border-top: calc(15 * var(--view-ratio)) solid var(--black);   
     box-shadow: var(--hand-shadow);
+
 }
 .clock-hands .second-hand::before {
     content: "";
@@ -224,6 +226,9 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
+}
+.details > *{
+    z-index: 1;
 }
 .details .city{
     margin-block-start: 6rem;
