@@ -258,21 +258,36 @@ body{
 }
 
 /* Style Options */
-.audio-option {
+.audio {
     position: absolute;
     bottom: 1vw;
     right: 1vw;
+}
+.audio .icon{
+    max-width: 1.2rem;
     height: 2rem;
     width: 2rem;
-}
-.audio-option img {
-    max-width: 1.2rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
     cursor: pointer;
 }
-.audio-option img.active {
-    animation: scale-audio 1s ease-in-out infinite;
+.popup {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    animation: scale-pulse 1s ease-in-out 10;
+    display: block;
+    cursor: pointer;
+    font-size: calc(1.2 * var(--view-ratio));
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    width: max-content;
 }
-@keyframes scale-audio {
+.audio img.active{
+    animation: scale-pulse 1s ease-in-out infinite;
+}
+@keyframes scale-pulse {
     0%{
         scale: 1;
     }

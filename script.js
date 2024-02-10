@@ -1,7 +1,10 @@
 
 let clockFace = document.querySelector(".clock-face");
-let audioIcon = document.querySelector(".audio-option img");
-let audioPermession = false;
+let audioBox = document.querySelector(".audio");
+let settings = {
+    audioPermession: false,
+    audioPopupShow : true
+};
 
 // Show Clock if Javascript is enabled
 document.querySelector('.clock-frame').style.display = 'block';
@@ -33,7 +36,7 @@ function updateClock() {
 
     let isTwelve = (hours === 12 || hours === 0) && minutes === 0 && seconds === 0;
 
-    if (audioPermession) {
+    if (settings.audioPermession) {
         tick()
 
         if (isTwelve) {
@@ -90,9 +93,10 @@ function getDetails() {
 
 // Toggle Audio Permission
 function changeAudioPermission() {
-    audioPermession = !audioPermession;  
+    settings.audioPermession = !settings.audioPermession;  
+    let audioIcon = audioBox.querySelector("img");
     audioIcon.classList.toggle("active");
-    if (audioPermession) {
+    if (settings.audioPermession) {
         audioIcon.setAttribute("src", "icons/volume.svg");
         audioIcon.setAttribute("title", "Turn Off Audio");
     }else{
@@ -100,7 +104,15 @@ function changeAudioPermission() {
         audioIcon.setAttribute("title", "Turn On Audio");       
     }
 }
-audioIcon.addEventListener("click", () => changeAudioPermission())
+audioBox.addEventListener("click", () =>changeAudioPermission());
+
+// Hide audio Popup after 5 sec
+if (settings.audioPopupShow) {
+    setTimeout(() =>{
+        audioBox.querySelector(".popup").style.display = "none"
+    } , 5000);
+    settings.audioPopupShow = false;
+}
 
 // Update Clock every second
 setInterval(updateClock, 1000);
@@ -110,3 +122,5 @@ updateClock()
 
 // Initiate Details before interval
 getDetails()
+
+
