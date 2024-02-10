@@ -234,21 +234,21 @@ body{
     z-index: 1;
 }
 .details .city{
-    margin-block-start: 6rem;
-    font-size: 1.1rem;
+    margin-block-start: calc(7 * var(--view-ratio));
+    font-size: calc(2 * var(--view-ratio));
 }
 .details .day{
     position: absolute;
-    top: 48%;
-    right: 23%;
-    font-size: .6rem;
-    border: 0.1rem solid #e5e5e5;
+    top: calc(14 * var(--view-ratio));
+    right: calc(6 * var(--view-ratio));
+    font-size: calc(.9 * var(--view-ratio));
+    border: calc(.1 * var(--view-ratio)) solid #e5e5e5;
     background: #e7e7e7;
     color: #2d2d2d;
     display: flex;  
 }
 .details .day > *{
-    padding: 0.2rem;
+    padding:calc(.3 * var(--view-ratio));
     display: inline-block;
     box-shadow: 1px 2px 3px 0px #b2b2b2 inset;
 }
@@ -281,5 +281,11 @@ body{
     }
     100%{
         scale: 1;
+    }
+}
+
+@media(max-width: 500px){
+    :root{
+        --view-ratio: 2.5vw;
     }
 }
