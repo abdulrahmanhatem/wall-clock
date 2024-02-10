@@ -3,6 +3,9 @@ let clockFace = document.querySelector(".clock-face");
 let audioIcon = document.querySelector(".audio-option img");
 let audioPermession = false;
 
+// Show Clock if Javascript is enabled
+document.querySelector('.clock-frame').style.display = 'block';
+
 //Create Clock numbers signs
 for (let n = 0; n < 12; n++) {
     let number = document.createElement("span");
@@ -97,7 +100,6 @@ function changeAudioPermission() {
     }
 }
 audioIcon.addEventListener("click", () => changeAudioPermission())
-
 
 // Update Clock every second
 setInterval(updateClock, 1000);

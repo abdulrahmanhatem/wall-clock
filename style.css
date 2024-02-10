@@ -28,7 +28,8 @@ body{
     width: calc(2* var( --clock-frame-radius) * var(--view-ratio));
     height: calc(2* var( --clock-frame-radius) * var(--view-ratio));
     position: relative;
-    box-shadow: 19px 9px 22px 0px #2f2f2f45, 17px 13px 27px 4px #5444266b inset
+    box-shadow: 19px 9px 22px 0px #2f2f2f45, 17px 13px 27px 4px #5444266b inset;
+    display:none;
 }
 .clock-face{
     width: 100%;
