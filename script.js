@@ -29,10 +29,14 @@ function updateClock() {
     let minuteHand = document.querySelector('.min-hand');
     let secondHand = document.querySelector('.second-hand');
 
+    let capNut = document.querySelector('.cap-nut');
+
     // update clock hands
     hourHand.style.rotate = `0 0 1 ${(hours*30) - 180 + (minutes*30 /60) }deg`;
     minuteHand.style.rotate = `0 0 1 ${(minutes *6) - 180 + (seconds*6 /60)}deg`;
     secondHand.style.rotate = `0 0 1 ${(seconds *6) - 180}deg`;
+
+    capNut.style.rotate = `0 0 1 ${(seconds *6) - 180}deg`;
 
     let isTwelve = (hours === 12 || hours === 0) && minutes === 0 && seconds === 0;
 
