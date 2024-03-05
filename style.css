@@ -11,7 +11,7 @@
     --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
     color-scheme: dark only;
 }
-body{
+body {
     background-image: linear-gradient(to right bottom, #fff, #cdcdcb);
     display: flex;
     align-items: center;
