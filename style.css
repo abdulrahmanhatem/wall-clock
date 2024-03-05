@@ -238,6 +238,7 @@ body {
 .details .city {
     margin-block-start: 27%;
     font-size: calc(2 * var(--view-ratio));
+    color: var(--black);
 }
 .details .day {
     position: absolute;
