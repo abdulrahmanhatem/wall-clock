@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     inline-size: 100vw;
-    block-size: 100vh;
+    block-size: 100svh;
     margin: 0;
     font-family: "Air American", sans-serif;
 }
