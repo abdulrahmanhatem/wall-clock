@@ -4,8 +4,6 @@
     --grey: #1a1915;
     --off-white: #dad7d2;
     --view-ratio: .8rem;
-    --clock-frame-radius: 15; /* Negetaive value for direction */
-    --hand: .35; 
     --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
     color-scheme: dark only;
 }
@@ -289,6 +287,24 @@ body {
 .audio img.active{
     animation: scale-pulse 1s ease-in-out infinite;
 }
+
+
+/* Dark Styles */
+body.dark {
+    background-image: linear-gradient(to right bottom, #1f1f1f, #111111);
+}
+.dark .clock-frame{
+    background-color: #212121;
+    background-image: none;
+    border: calc(1 * var(--view-ratio)) solid rgb(22, 8, 0);   
+    box-shadow: 19px 9px 22px 0px #20202045, 17px 13px 27px 4px #2222226b inset;
+}
+.dark .clock-face span {
+    background-color: #111;
+}
+.dark .clock-face span::before {
+    background-color: #111;
+}
 @keyframes scale-pulse {
     0%{
         scale: 1;
@@ -307,21 +323,3 @@ body {
     }
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root{
-        --black: #000;
-        --grey: #1a1915;
-        --off-white: #dad7d2;
-        --view-ratio: .8rem;
-        --clock-frame-radius: 15; /* Negetaive value for direction 
-        --hex-nut-radius: 1.6; 
-        --cap-nut-radius: 1; 
-        --hand: .35; 
-        --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
-    }
-    .clock-frame{
-        background-color: white;
-        background-image: none;
-        box-shadow: 19px 9px 22px 0px white, 17px 13px 27px 4px white inset;
-    }
-} */

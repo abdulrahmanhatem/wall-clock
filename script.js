@@ -131,8 +131,7 @@ const detectionDiv = document.querySelector('#detection');
 // If the computed style is not white then the page is in Auto Dark Theme.
 const isAutoDark = getComputedStyle(detectionDiv).backgroundColor != 'rgb(255, 255, 255)';
 // Update element styles when Auto Dark Theme is applied.
-// if (isAutoDark) {
-//   const myElement = document.querySelector('#my-element');
-//   myElement.classList.add('autoDarkOnlyStyle');
-// }
+if (isAutoDark) {
+  document.body.classList.add('dark');
+}
 console.log("isDark?", isAutoDark);
