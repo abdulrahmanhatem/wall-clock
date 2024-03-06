@@ -296,8 +296,9 @@ body.dark {
 .dark .clock-frame{
     background-color: #212121;
     background-image: none;
-    border: calc(1 * var(--view-ratio)) solid rgb(22, 8, 0);   
+    outline: calc(1 * var(--view-ratio)) solid rgb(58, 58, 58);   
     box-shadow: 19px 9px 22px 0px #20202045, 17px 13px 27px 4px #2222226b inset;
+    border: none;
 }
 .dark .clock-face span {
     background-color: #111;
@@ -305,6 +306,27 @@ body.dark {
 .dark .clock-face span::before {
     background-color: #111;
 }
+.dark .clock-hands .second-hand::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: calc(49% + (calc(.1 * var(--view-ratio))/2)) ;
+    inline-size: 2%;
+    block-size: 2%;
+    border-right: calc(.1 * var(--view-ratio)) solid transparent!important;
+    border-left: calc(.1 * var(--view-ratio)) solid transparent!important;
+    border-top: calc(15 * var(--view-ratio)) solid #fff!important;
+    box-shadow: var(--hand-shadow);
+}
+
+
+
+
+
+
+
+
 @keyframes scale-pulse {
     0%{
         scale: 1;
