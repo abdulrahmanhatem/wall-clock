@@ -127,11 +127,37 @@ updateClock()
 // Initiate Details before interval
 getDetails()
 
-const detectionDiv = document.querySelector('#detection');
+// Detect Dark Mode 
+
+
+// function setTheme(themeName){
+//     localStorage.setItem("theme", themeName);
+// }
+
+// function keepTheme(setTheme){
+//     const theme = localStorage.getItem("theme");
+
+//     if(theme){
+//         setTheme(theme, setClassName);
+//         return;
+//     }
+
+//     const prefersLightTheme = window.matchMedia("(prefers-color-scheme: light)");
+
+//     if(prefersLightTheme.matches){
+//         setTheme('theme-light', setClassName);
+//         return;
+//     }
+
+//     setTheme('theme-dark', setClassName);
+// }
+
+// keepTheme()
+
+const isDarkDiv = document.querySelector('#isDark');
 // If the computed style is not white then the page is in Auto Dark Theme.
-const isAutoDark = getComputedStyle(detectionDiv).backgroundColor != 'rgb(255, 255, 255)';
-// Update element styles when Auto Dark Theme is applied.
-if (isAutoDark) {
-  document.body.classList.add('dark');
-}
-console.log("isDark?", isAutoDark);
+const isDark = getComputedStyle(isDarkDiv).backgroundColor !== 'rgb(255, 255, 255)';
+// Update styles when Auto Dark Theme is applied.
+isDark && document.body.classList.add("dark")
+
+

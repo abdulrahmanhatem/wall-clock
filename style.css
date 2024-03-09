@@ -5,7 +5,6 @@
     --off-white: #dad7d2;
     --view-ratio: .8rem;
     --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
-    color-scheme: dark only;
 }
 body {
     background-image: linear-gradient(to right bottom, #fff, #cdcdcb);
@@ -291,7 +290,8 @@ body {
 
 /* Dark Styles */
 body.dark {
-    background-image: linear-gradient(to right bottom, #1f1f1f, #111111);
+    background-image: none;
+    background: #181818;
 }
 .dark .clock-frame{
     background-color: #212121;
@@ -301,31 +301,18 @@ body.dark {
     border: none;
 }
 .dark .clock-face span {
-    background-color: #111;
+    background-color: #bbb;
 }
 .dark .clock-face span::before {
-    background-color: #111;
+    background-color: #bbb;
 }
 .dark .clock-hands .second-hand::after {
-    content: "";
-    display: block;
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: calc(49% + (calc(.1 * var(--view-ratio))/2)) ;
-    inline-size: 2%;
-    block-size: 2%;
-    border-right: calc(.1 * var(--view-ratio)) solid transparent!important;
-    border-left: calc(.1 * var(--view-ratio)) solid transparent!important;
-    border-top: calc(15 * var(--view-ratio)) solid #fff!important;
-    box-shadow: var(--hand-shadow);
+    background-color: black;
+    block-size: calc(15 * var(--view-ratio));
+    inline-size: 4%;
+    border: none;
+    inset-inline-start: 50.5%;
 }
-
-
-
-
-
-
-
 
 @keyframes scale-pulse {
     0%{
@@ -344,4 +331,3 @@ body.dark {
         --view-ratio: 2.5vw;
     }
 }
-
