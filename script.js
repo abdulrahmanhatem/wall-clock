@@ -119,7 +119,10 @@ if (settings.audioPopupShow) {
 }
 
 // Update Clock every second
-setInterval(updateClock, 1000);
+setInterval(()=>{
+    updateClock();
+    isAutoDark();
+}, 1000);
 
 // Initiate clock hands before interval
 updateClock()
@@ -127,12 +130,13 @@ updateClock()
 // Initiate Details before interval
 getDetails()
 
-// Detect Dark Mode 
-
-const isDarkDiv = document.querySelector('#isDark');
-// If the computed style is not white then the page is in Auto Dark Theme.
-const isDark = getComputedStyle(isDarkDiv).backgroundColor !== 'rgb(255, 255, 255)';
-// Update styles when Auto Dark Theme is applied.
-isDark && document.body.classList.add("dark")
+// Detect Auto Dark Mode 
+function isAutoDark(){
+    const body = document.body;
+    // If the computed style is not white then the page is in Auto Dark Theme.
+    const isDark = getComputedStyle(body).backgroundColor !== 'rgb(255, 255, 255)';
+    // Update styles when Auto Dark Theme is applied.
+    isDark && body.classList.add("dark")
+}
 
 
