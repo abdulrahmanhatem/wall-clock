@@ -129,31 +129,6 @@ getDetails()
 
 // Detect Dark Mode 
 
-
-// function setTheme(themeName){
-//     localStorage.setItem("theme", themeName);
-// }
-
-// function keepTheme(setTheme){
-//     const theme = localStorage.getItem("theme");
-
-//     if(theme){
-//         setTheme(theme, setClassName);
-//         return;
-//     }
-
-//     const prefersLightTheme = window.matchMedia("(prefers-color-scheme: light)");
-
-//     if(prefersLightTheme.matches){
-//         setTheme('theme-light', setClassName);
-//         return;
-//     }
-
-//     setTheme('theme-dark', setClassName);
-// }
-
-// keepTheme()
-
 const isDarkDiv = document.querySelector('#isDark');
 // If the computed style is not white then the page is in Auto Dark Theme.
 const isDark = getComputedStyle(isDarkDiv).backgroundColor !== 'rgb(255, 255, 255)';
