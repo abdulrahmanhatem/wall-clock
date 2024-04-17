@@ -6,7 +6,7 @@ Wall Clock is a live Clock frontend interface.
 [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
 
 ## Description 
-Welcome abroad fellow developer, here you will find the details of wall clock project story
+Welcome abroad fellow developer, here you will find the details of my wall clock project story.
 
 ### Motivation 
 When I saw this beautiful minimalist clock design , I encouraged myself to implement it with HTML, CSS and Javascript.
