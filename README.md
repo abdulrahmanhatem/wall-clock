@@ -10,6 +10,7 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 Here is the Design 
 
+<img src="model.png" width=50% height=50%>
 ![model](model.png)
 
 
