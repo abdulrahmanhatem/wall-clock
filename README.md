@@ -31,6 +31,16 @@ It provides a nice looking design for a live real time clock.
 As a frontend developer I put my HTML, CSS and Javascript skills in practice and learn new things about client built-in internationalization date time format and zone apis.
 
 
+## Features
+ - Showing user real time within one's zone.
+ - Showing user visiting from city.
+ - Showing user real day date and day name.
+ - Simulate a real life clock movement mechanism.
+ - Simulating a real life clock tick sound.
+ - Simulating a real life clock mignight 12 a.m. Sound.
+ - Giving user option to turn on/off sound.
+ - Great Responsive design for all devices.
+   
 
 
 
