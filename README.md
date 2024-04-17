@@ -1,1 +1,15 @@
 # Wall Clock
+
+Wall Clock is a frontend live Clock interface.
+
+## Description 
+Welcome abroad fellow developer, here you will find the details of wall clock project story
+
+### Motivation 
+When I saw this beautiful minimalist clock design , I encouraged myself to implement it with HTML, CSS and Javascript 
+Here is the Design 
+[model](model.png)
+
+
+
+
