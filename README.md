@@ -9,13 +9,13 @@ Wall Clock is a live Clock frontend interface.
 Welcome abroad fellow developer, here you will find the details of wall clock project story
 
 ### Motivation 
-When I saw this beautiful minimalist clock design , I encouraged myself to implement it with HTML, CSS and Javascript 
+When I saw this beautiful minimalist clock design , I encouraged myself to implement it with HTML, CSS and Javascript.
 
 Here is the Design 
 
 ![Before](model-before.png)
 
-And result is like 
+And result was like 
 
 ![Before](model-after.png)
 
@@ -40,7 +40,9 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
  - Simulating a real life clock mignight 12 a.m. Sound.
  - Giving user option to turn on/off sound.
  - Great Responsive design for all devices.
-   
+
+ ## License
+ [MIT](https://opensource.org/license/mit)
 
 
 
