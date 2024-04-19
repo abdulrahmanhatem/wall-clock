@@ -272,6 +272,10 @@ body {
     inset-inline-end: calc(1 * var(--view-ratio));
     cursor: pointer;
 }
+.audio .icon img{
+    block-size: 100%;
+    inline-size: 100%;
+}
 .popup {
     position: absolute;
     inset-block-start: calc(-2.2 * var(--view-ratio));
