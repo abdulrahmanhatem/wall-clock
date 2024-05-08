@@ -1,3 +1,5 @@
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdulrahmanhatem)](https://github.com/anuraghazra/github-readme-stats)
+
 # Wall Clock
 
 Wall Clock is a live Clock frontend interface.
