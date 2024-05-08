@@ -5,6 +5,7 @@
     --off-white: #dad7d2;
     --view-ratio: .8rem;
     --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
+    color-scheme: only light;
 }
 body {
     background-color: rgb(255, 255, 255);
