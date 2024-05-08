@@ -1,3 +1,6 @@
+[![Wall Clock](https://github-readme-stats.vercel.app/api/pin/?username=abdulrahmanhatem&repo=wall-clock)](https://github.com/abdulrahmanhatem/github-readme-stats)
+
+
 # Wall Clock
 
 Wall Clock is a live Clock frontend interface.
