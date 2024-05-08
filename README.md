@@ -1,6 +1,3 @@
-[![Abdelrahman's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdulrahmanhatem&&show_icons=true&theme=dark&bg_color=#ff0000)
-](https://github.com/anuraghazra/github-readme-stats)
-
 # Wall Clock
 
 Wall Clock is a live Clock frontend interface.
