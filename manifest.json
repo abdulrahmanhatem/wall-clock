@@ -3,13 +3,19 @@
     "start_url": "../index.html",
     "display": "standalone",
     "background_color": "#ffffff",
+    "theme_color":"#ffffff",
     "description" : "Wall Clock is a live Clock frontend interface, Showing user real time, zone, date, day name and simulating clock mechanism in responsive design.",
     "icons": [
         {
-            "src": "model-before.png", 
-            "sizes": "image/png",
-            "type" : "400x368" 
-
+            "src": "icons/manifest_512.png", 
+            "type": "image/png",
+            "sizes" : "512x512" 
+        }, 
+        {
+            "src": "icons/maskable_icon.png", 
+            "type": "image/png",
+            "sizes" : "512x512" , 
+            "purpose": "maskable"
         }
     ]
 }
