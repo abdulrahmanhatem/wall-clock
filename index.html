@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wall Clock is a live Clock frontend interface,
+     Showing user real time, zone, date, day name and simulating clock mechanism in responsive design.">
+    <title>Wall Watch</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <noscript>
+        Clock needs <strong>Javascrit</strong>  to be  <strong>enabled</strong> in your browser to be <strong>alive!</strong> 
+    </noscript>
+    
+    <div class="clock-frame">
+        <div class="clock-face"></div>
+        <div class="clock-hands">
+            <span class="hex-nut"></span>
+            <span class="hour-hand"></span>
+            <span class="min-hand"></span>
+            <span class="second-hand"></span>
+            <span class="cap-nut"></span>
+        </div>
+        <div class="details">
+            <span class="city"></span>
+            <div class="day">
+                <span class="name"></span>
+                <span class="digit"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="audio">
+        <div class="icon">
+            <span class="popup">Hear <strong>Clock!</strong></span>
+            <img src="icons/volume-slash.svg" alt="Audio" title="Turn ON Audio">
+        </div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
