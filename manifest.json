@@ -27,6 +27,13 @@
             "type": "image/png", 
             "form_factor": "wide", 
             "label": "Wall Clock App"
+        }, 
+        {
+            "src": "https://abdulrahmanhatem.github.io/wall-clock/icons/manifest_512.png", 
+            "sizes": "512x512", 
+            "type": "image/png", 
+            "form_factor": "narrow", 
+            "label": "Wall Clock App"
         }
     ]
 }
