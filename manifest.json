@@ -1,6 +1,8 @@
 {
-    "name" : "Wall Clock", 
+    "name" : "Wall Clock App", 
+    "short_name": "Clock App",
     "start_url": "https://abdulrahmanhatem.github.io/wall-clock",
+    "categories": ["tools", "clock", "others"], 
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color":"#ffffff",
@@ -16,6 +18,15 @@
             "type": "image/png",
             "sizes" : "512x512" , 
             "purpose": "maskable"
+        }
+    ], 
+    "screenshots": [
+        {
+            "src": "https://abdulrahmanhatem.github.io/wall-clock/icons/manifest_512.png", 
+            "sizes": "512x512", 
+            "type": "image/png", 
+            "form_factor": "wide", 
+            "label": "Wall Clock App"
         }
     ]
 }
