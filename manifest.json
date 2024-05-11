@@ -6,6 +6,7 @@
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color":"#ffffff",
+    "orientation": "portrait",
     "description" : "Wall Clock is a live Clock frontend interface, Showing user real time, zone, date, day name and simulating clock mechanism in responsive design.",
     "icons": [
         {
