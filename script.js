@@ -140,6 +140,8 @@ function isAutoDark(){
 }
 
 // Service Worker registeration
+const swDirectory = "";
+console.log("location : ", location.hostname);
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/wall-clock/sw.js")
     .then(reg => {
