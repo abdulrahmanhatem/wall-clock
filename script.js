@@ -140,10 +140,13 @@ function isAutoDark(){
 }
 
 // Service Worker registeration
-const swDirectory = "";
+let swDirectory = "/";
+if (location?.hostname.includes("abdulrahmanhatem.github.io")) {
+    swDirectory = "/wall-clock"
+}
 console.log("location : ", location.hostname);
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/wall-clock/sw.js")
+    navigator.serviceWorker.register(`${swDirectory}/sw.js`)
     .then(reg => {
         console.log("Service worker is registered", reg);
     }).catch(e => console.log(e))
