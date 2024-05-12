@@ -139,3 +139,11 @@ function isAutoDark(){
     isDark && body.classList.add("dark")
 }
 
+// Service Worker registeration
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js")
+    .then(reg => {
+        console.log("Service worker is registered", reg);
+    }).catch(e => console.log(e))
+}
+
