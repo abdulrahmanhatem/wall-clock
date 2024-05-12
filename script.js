@@ -141,7 +141,7 @@ function isAutoDark(){
 
 // Service Worker registeration
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js")
+    navigator.serviceWorker.register("/wall-clock/sw.js")
     .then(reg => {
         console.log("Service worker is registered", reg);
     }).catch(e => console.log(e))
