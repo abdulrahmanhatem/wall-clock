@@ -1,7 +1,9 @@
 const staticCacheName = "app-static-v-1";
+const dynamicCacheName = "app-dynamic-cashe-1";
 const assets = [
     "/",
     "/index.html", 
+    "/fallback.html",
     "/script.js", 
     "/style.css", 
     "/icons/volume.svg", 
@@ -26,7 +28,7 @@ self.addEventListener("activate", evt=>{
     evt.waitUntill(
         caches.keys().then(keys => {
             return new Promise.all(
-                keys.filter(key => key !== staticCacheName).map(key => {
+                keys.filter(key => key !== staticCacheName && key !== dynamicCacheName).map(key => {
                     caches.delete(key);
                 })
             );
@@ -40,7 +42,14 @@ self.addEventListener("fetch", evt =>{
     // console.log("fetch event", evt );
     evt.respondWith(
         caches.match(evt.request)
-        .then(res => res || fetch(evt.request))
-        .catch(e => console.log(e))
+        .then(res => res || fetch(evt.request).then(fetchRes => {
+            return caches.open(dynamicCacheName).then(cache => {
+                cache.put(evt.request.url , fetchRes);
+                return fetchRes;
+            });
+        }))
+        .catch(() => {
+            return caches.match("/fallback.html")
+        })
     );
 })
