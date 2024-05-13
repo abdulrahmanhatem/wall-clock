@@ -44,12 +44,29 @@ self.addEventListener("fetch", evt =>{
         caches.match(evt.request)
         .then(res => res || fetch(evt.request).then(fetchRes => {
             return caches.open(dynamicCacheName).then(cache => {
+
+
                 cache.put(evt.request.url , fetchRes);
+                limitCacheSize(dynamicCacheName, 15)
                 return fetchRes;
             });
         }))
         .catch(() => {
-            return caches.match("/fallback.html")
+            if (evt.request.url.indexOf(".html") > -1) {
+                return caches.match("/fallback.html");
+            }
         })
     );
 })
+
+// cache zise limit function 
+const limitCacheSize = (name, size) =>{
+    caches.open(name).then(cache => {
+        cache.keys().then(keys => {
+            if (keys.length > size) {
+                console.log("size is ", keys.length);
+                cache.delete(keys[0]).then(limitCacheSize(name, size));
+            }
+        })
+    })
+}
