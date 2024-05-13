@@ -144,7 +144,6 @@ let swDirectory = "/";
 if (location?.hostname.includes("abdulrahmanhatem.github.io")) {
     swDirectory = "/wall-clock/"
 }
-console.log("location : ", location.hostname);
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register(`${swDirectory}sw.js`)
     .then(reg => {
