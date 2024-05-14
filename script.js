@@ -13,7 +13,7 @@ document.querySelector('.clock-frame').style.display = 'block';
 for (let n = 0; n < 12; n++) {
     let number = document.createElement("span");
     let deg = n *30; 
-    let translate = `50%,  calc(12.7 * var(--view-ratio))`;
+    let translate = `50%,  425%`;
     // Rotate and translate number sign from the center
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
     clockFace.appendChild(number)

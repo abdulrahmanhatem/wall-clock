@@ -3,8 +3,8 @@
     --black: #000;
     --grey: #1a1915;
     --off-white: #dad7d2;
-    --view-ratio: .8rem;
     --hand-shadow: -3px 3px 11px 1px #2f2f2f45;
+    --clock-diameter : 25rem;
     color-scheme: only light;
 }
 body {
@@ -21,10 +21,10 @@ body {
 .clock-frame{
     background-color: var(--off-white);
     background-image: radial-gradient( var(--off-white), #e5e5e5);
-    border: calc(1 * var(--view-ratio)) solid black;
+    border: calc(var(--clock-diameter) * .04) solid black;
     border-radius: 50%;
-    inline-size: calc(30 * var(--view-ratio));
-    block-size: calc(30 * var(--view-ratio));
+    inline-size: var(--clock-diameter);
+    block-size: var(--clock-diameter);
     position: relative;
     box-shadow: 19px 9px 22px 0px #2f2f2f45, 17px 13px 27px 4px #5444266b inset;
     display:none;
@@ -44,7 +44,7 @@ body {
     inline-size: 1%;
     block-size: 10%;
     background-color: var(--black);
-    border-radius: calc(.1 * var(--view-ratio));
+    border-radius: calc(var(--clock-diameter) * .004);
 }
 .clock-face span::before {
     content: '';
@@ -200,12 +200,12 @@ body {
     display: block;
     position: absolute;
     inset-block-start: 0;
-    inset-inline-start: calc(49% + (calc(.1 * var(--view-ratio))/2)) ;
+    inset-inline-start: calc(49% + (calc(var(--clock-diameter) * .004)/2)) ;
     inline-size: 2%;
     block-size: 2%;
-    border-right: calc(.1 * var(--view-ratio)) solid transparent;
-    border-left: calc(.1 * var(--view-ratio)) solid transparent;
-    border-top: calc(15 * var(--view-ratio)) solid var(--black);
+    border-right: calc(var(--clock-diameter) * .004) solid transparent;
+    border-left: calc(var(--clock-diameter) * .004) solid transparent;
+    border-top: calc(.5 *var(--clock-diameter)) solid var(--black);
     box-shadow: var(--hand-shadow);
 }
 .clock-hands .second-hand::before {
@@ -217,7 +217,7 @@ body {
     inline-size: 7%;
     block-size: 49%;
     background-color: var(--black);
-    border-radius: 0 0 calc(.5 * var(--view-ratio)) calc(.5 * var(--view-ratio));
+    border-radius: 0 0 calc(var(--clock-diameter) * .02) calc(var(--clock-diameter) * .02);
     box-shadow: 0px 0px 1px var(--black);
     box-shadow: var(--hand-shadow);
 }
@@ -236,41 +236,41 @@ body {
 }
 .details .city {
     margin-block-start: 27%;
-    font-size: calc(2 * var(--view-ratio));
+    font-size: calc(var(--clock-diameter) * .08);
     color: var(--black);
 }
 .details .day {
     position: absolute;
     inset-block-start: 46%;
     inset-inline-end: 22%;
-    font-size: calc(.9 * var(--view-ratio));
-    border: calc(.1 * var(--view-ratio)) solid #e5e5e5;
+    font-size: calc(var(--clock-diameter) * .042);
+    border: calc(var(--clock-diameter) * .004) solid #e5e5e5;
     background: #e7e7e7;
     color: #2d2d2d;
     display: flex;
 }
 .details .day > *{
-    padding:calc(.3 * var(--view-ratio));
+    padding:calc(var(--clock-diameter) * .015);
     display: inline-block;
     box-shadow: 1px 2px 3px 0px #b2b2b2 inset;
 }
 .details .day .name{
-    border-inline-end: solid calc(.1 * var(--view-ratio)) #bbb;
+    border-inline-end: solid calc(var(--clock-diameter) * .004) #bbb;
     font-weight: 600;
 }
 
 /* Style Options */
 .audio {
     position: absolute;
-    inset-block-end: calc(1 * var(--view-ratio));
-    inset-inline-end: calc(1 * var(--view-ratio));
+    inset-block-end: calc(var(--clock-diameter) * .04);
+    inset-inline-end: calc(var(--clock-diameter) * .04);
 }
 .audio .icon{
-    block-size: calc(2 * var(--view-ratio));
-    inline-size: calc(2 * var(--view-ratio));
+    block-size: calc(var(--clock-diameter) * .08);
+    inline-size: calc(var(--clock-diameter) * .08);
     position: absolute;
-    inset-block-end: calc(1 * var(--view-ratio));
-    inset-inline-end: calc(1 * var(--view-ratio));
+    inset-block-end: calc(var(--clock-diameter) * .04);
+    inset-inline-end: calc(var(--clock-diameter) * .04);
     cursor: pointer;
 }
 .audio .icon img{
@@ -279,14 +279,14 @@ body {
 }
 .popup {
     position: absolute;
-    inset-block-start: calc(-2.2 * var(--view-ratio));
+    inset-block-start:  calc(var(--clock-diameter) * -.081);
     inset-inline-end: 0;
     animation: scale-pulse 1s ease-in-out 10;
     display: block;
     cursor: pointer;
-    font-size: calc(1.2 * var(--view-ratio));
-    padding: calc(0.3 * var(--view-ratio));
-    border-radius: calc(0.3 * var(--view-ratio));
+    font-size: calc(var(--clock-diameter) * .041);
+    padding: calc(var(--clock-diameter) * .015);
+    border-radius:calc(var(--clock-diameter) * .015);
     inline-size: max-content;
 }
 .audio img.active{
@@ -302,7 +302,7 @@ body.dark {
 .dark .clock-frame{
     background-color: #212121;
     background-image: none;
-    outline: calc(1 * var(--view-ratio)) solid rgb(58, 58, 58);   
+    outline: calc(var(--clock-diameter) * .04) solid rgb(58, 58, 58);   
     box-shadow: 19px 9px 22px 0px #20202045, 17px 13px 27px 4px #2222226b inset;
     border: none;
 }
@@ -314,7 +314,7 @@ body.dark {
 }
 .dark .clock-hands .second-hand::after {
     background-color: black;
-    block-size: calc(15 * var(--view-ratio));
+    block-size: 15rem;
     inline-size: 4%;
     border: none;
     inset-inline-start: 50.5%;
@@ -334,6 +334,6 @@ body.dark {
 
 @media(max-width: 500px){
     :root{
-        --view-ratio: 2.5vw;
+        --clock-diameter: 80vw;
     }
 }
