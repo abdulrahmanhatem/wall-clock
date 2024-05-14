@@ -265,9 +265,9 @@ body {
     inset-block-end: calc(var(--clock-diameter) * .04);
     inset-inline-end: calc(var(--clock-diameter) * .04);
 }
-.audio .icon{
-    block-size: calc(var(--clock-diameter) * .08);
-    inline-size: calc(var(--clock-diameter) * .08);
+.audio .icon {
+    block-size: calc(var(--clock-diameter) * .06);
+    inline-size: calc(var(--clock-diameter) * .075);
     position: absolute;
     inset-block-end: calc(var(--clock-diameter) * .04);
     inset-inline-end: calc(var(--clock-diameter) * .04);
