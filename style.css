@@ -266,8 +266,8 @@ body {
     inset-inline-end: calc(var(--clock-diameter) * .04);
 }
 .audio .icon {
-    block-size: calc(var(--clock-diameter) * .06);
-    inline-size: calc(var(--clock-diameter) * .075);
+    block-size: calc(var(--clock-diameter) * .05);
+    inline-size: calc(var(--clock-diameter) * .065);
     position: absolute;
     inset-block-end: calc(var(--clock-diameter) * .04);
     inset-inline-end: calc(var(--clock-diameter) * .04);
@@ -284,7 +284,7 @@ body {
     animation: scale-pulse 1s ease-in-out 10;
     display: block;
     cursor: pointer;
-    font-size: calc(var(--clock-diameter) * .041);
+    font-size: calc(var(--clock-diameter) * .031);
     padding: calc(var(--clock-diameter) * .015);
     border-radius:calc(var(--clock-diameter) * .015);
     inline-size: max-content;
