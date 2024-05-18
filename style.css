@@ -274,7 +274,7 @@ body {
     cursor: pointer;
 }
 .audio .icon img{
-    block-size: 100%;
+    block-size: auto;
     inline-size: 100%;
 }
 .popup {
