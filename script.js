@@ -147,7 +147,7 @@ if (location?.hostname.includes("abdulrahmanhatem.github.io")) {
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register(`${swDirectory}sw.js`)
     .then(reg => {
-        console.log("Service worker is registered", reg);
+        // console.log("Service worker is registered", reg);
     }).catch(e => console.log(e))
 }
 
