@@ -17,7 +17,7 @@ self.addEventListener("install", evt =>{
     evt.waitUntill(
         caches.open(staticCacheName).then(cache=>{
             cache.addAll(assets);
-        })
+        }).catch(e => console.log(e))
     )
 })
 
@@ -31,7 +31,7 @@ self.addEventListener("activate", evt=>{
                     caches.delete(key);
                 })
             );
-        })
+        }).catch(e => console.log(e))
     );
 
 })
@@ -63,6 +63,6 @@ const limitCacheSize = (name, size) =>{
             if (keys.length > size) {
                 cache.delete(keys[0]).then(limitCacheSize(name, size));
             }
-        })
+        }).catch(e => console.log(e))
     })
 }
