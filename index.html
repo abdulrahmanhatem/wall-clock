@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+
     <!-- IOS Support -->
     <link rel="apple-touch-icon" href="/icons//manifest/72.png">
     <link rel="apple-touch-icon" href="/icons//manifest/96.png">
@@ -47,10 +48,10 @@
     <div class="audio">
         <div class="icon">
             <span class="popup">Hear <strong>Clock!</strong></span>
-            <img src="icons/volume-slash.webp" alt="Audio" title="Turn ON Audio" width="20" height="20">
+            <img src="icons/volume-slash.webp" alt="Audio" title="Turn ON Audio" width="20" height="20" loading="lazy">
         </div>
      </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer async></script>
     <script src="sw.js"></script>
 </body>
 </html>
