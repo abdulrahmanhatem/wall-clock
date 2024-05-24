@@ -46,7 +46,7 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
  - Giving user option to ***turn on/off sound***.
  - Great ***Responsive design*** for all devices.
 
- ## <img src="https://abdulrahmanhatem.github.io/icons/markdown/license" alt="License" align="center"> License
+ ## <img src="https://abdulrahmanhatem.github.io/icons/markdown/license.png" alt="License" align="center"> License
 [MIT](https://opensource.org/license/mit)
 
 
