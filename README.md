@@ -51,8 +51,7 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
 Wall Clock is PWA which is has a progressive Web App Feature.
 It can be installed from IOS and Android broswers and working normally as a regular native app.
 
-Give it a try and install it on your device : 
-
+Give it a try and install it on your device : \n
 [How to install PWA on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)
 
 [How to install PWA on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)
