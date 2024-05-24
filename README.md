@@ -2,8 +2,8 @@
 
 Wall Clock is a live Clock frontend interface.
 
-## <img src="https://abdulrahmanhatem.github.io/wall-clock/favicon.ico" alt="Clock" align="center">  Live Link
-[Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
+## Live Link
+<img src="https://abdulrahmanhatem.github.io/wall-clock/favicon.ico" alt="Clock" align="center"> [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
 
 ## Description 
 Welcome abroad fellow developer, here you will find the details of my wall clock project story.
