@@ -5,14 +5,6 @@ Wall Clock is a live Clock frontend interface.
 ## Live Link
 [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
 
-## Technolgies 
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML*** 
-
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS*** 
-
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript*** 
-
-
 ## Description 
 Welcome abroad fellow developer, here you will find the details of my wall clock project story.
 
@@ -23,9 +15,17 @@ Here is the Design
 
 ![Before](model-before.png)
 
-And result was like 
+And result would be something like 
 
 ![After](model-after.png)
+
+### What are the technologies you will use ? 
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML*** 
+
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS*** 
+
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript*** 
+
 
 ### Why wall clock project ?
 
