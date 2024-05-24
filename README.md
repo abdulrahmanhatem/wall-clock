@@ -47,11 +47,13 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
  - Great ***Responsive design*** for all devices.
  - Static asset cache via service workers which means less http requess and less loading cost.  
 
-##  <img src="https://abdulrahmanhatem.github.io/icons/markdown/pwa.png" alt="Progressive Web App" align="center"> PWA Feature
-Wall Clock is PWA which is has a progressive Web App Feature and can be installed from IOS and Android broswers and working normally as a regular native app.
+##  <img src="https://abdulrahmanhatem.github.io/icons/markdown/pwa.png" alt="Progressive Web App" align="center"> Progressive Web Application Feature
+Wall Clock is PWA which is has a progressive Web App Feature.
+It can be installed from IOS and Android broswers and working normally as a regular native app.
 
-Give it a nicw try and install it in your device : 
+Give it a try and install it on your device : 
 [How to install PWA on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)
+
 [How to install PWA on IOS]([https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DAndroid](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS))
 
 
