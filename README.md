@@ -20,8 +20,8 @@ And result would be something like
 ![After](model-after.png)
 
 ### What are the technologies you will use ? 
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML***   -
-   <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS***   -           
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML***
+   <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS***           
    <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript***         
 
 
