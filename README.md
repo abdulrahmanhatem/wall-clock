@@ -8,9 +8,9 @@ Wall Clock is a live Clock frontend interface.
 ## Technolgies 
 <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML*** 
 
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="CSS" align="center"> ***CSS*** 
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS*** 
 
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="Javascript" align="center"> ***Javascript*** 
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript*** 
 
 
 ## Description 
