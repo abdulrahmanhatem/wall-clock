@@ -21,8 +21,7 @@ And result would be something like
 
 ### What are the technologies you will use ? 
 <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/html.png" alt="HTML" align="center"> ***HTML***   &ensp;
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS***   &ensp;   
-<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript***         
+<img src="https://abdulrahmanhatem.github.io/tech-icons/icons/css.png" alt="CSS" align="center"> ***CSS***   &ensp;   <img src="https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png" alt="Javascript" align="center"> ***Javascript***         
 
 
 ### Why wall clock project ?
