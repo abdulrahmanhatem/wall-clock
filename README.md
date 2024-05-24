@@ -47,8 +47,8 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
  - Static asset cache via service workers which means less http requess and less loading cost.  
 
 ##  <img src="https://abdulrahmanhatem.github.io/icons/markdown/pwa.png" alt="Progressive Web App" align="center"> Progressive Web Application Feature
-Wall Clock is PWA which is has a progressive Web App Feature.
-It can be installed from IOS and Android broswers and working normally as a regular native app.
+Wall Clock is PWA which means it has a progressive Web App Features.
+It can be installed from Desktop, IOS and Android broswers and working normally as a regular native app.
 
 Give it a try and install it on your device :\
 [Install on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)\
