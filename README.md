@@ -6,11 +6,11 @@ Wall Clock is a live Clock frontend interface.
 [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
 
 ## Technolgies 
-***HTML*** ![HTML](https://abdulrahmanhatem.github.io/tech-icons/icons/html.png) 
+![HTML](https://abdulrahmanhatem.github.io/tech-icons/icons/html.png) ***HTML*** 
 
-***CSS*** ![CSS](https://abdulrahmanhatem.github.io/tech-icons/icons/css.png)
+![CSS](https://abdulrahmanhatem.github.io/tech-icons/icons/css.png) ***CSS*** 
 
-***Javascript*** ![Javascript](https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png)
+![Javascript](https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png) ***Javascript*** 
 
 
 ## Description 
