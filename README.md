@@ -20,9 +20,8 @@ And result would be something like
 ![After](model-after.png)
 
 ### What are the technologies you will use ? 
-<img src="https://abdulrahmanhatem.github.io/icons/tech/html.png" alt="HTML" align="center"> ***HTML***   &ensp;
-<img src="https://abdulrahmanhatem.github.io/icons/tech//css.png" alt="CSS" align="center"> ***CSS***   &ensp;   
-<img src="https://abdulrahmanhatem.github.io/icons/tech/javascript.png" alt="Javascript" align="center"> ***Javascript***         
+<img src="https://abdulrahmanhatem.github.io/icons/tech/html.png" alt="HTML" align="center"> ***HTML***&ensp;
+<img src="https://abdulrahmanhatem.github.io/icons/tech//css.png" alt="CSS" align="center"> ***CSS***&ensp;<img src="https://abdulrahmanhatem.github.io/icons/tech/javascript.png" alt="Javascript" align="center"> ***Javascript***         
 
 
 ### Why wall clock project ?
