@@ -5,7 +5,7 @@ Wall Clock is a live Clock frontend interface.
 ## Live Link
 [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
 
-<img src="https://abdulrahmanhatem.github.io/icons/markdown/description.png" alt="Description" align="center"> ## Description 
+## <img src="https://abdulrahmanhatem.github.io/icons/markdown/description.png" alt="Description" align="center"> Description 
 Welcome abroad fellow developer, here you will find the details of my wall clock project story.
 
 ### Motivation 
