@@ -36,7 +36,7 @@ It provides a nice looking design for a live real time clock.
 As a frontend developer I put my HTML, CSS and Javascript skills in practice and learn new things about client ***built-in internationalization date time format and zone apis***.
 
 
-## Features
+## <img src="https://abdulrahmanhatem.github.io/icons/markdown/features.png" alt="Features" align="center">  Features
  - Showing user real ***time*** within one's zone.
  - Showing user visiting from ***city***.
  - Showing user real ***day date and day name***.
