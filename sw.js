@@ -1,68 +1,89 @@
-const staticCacheName = "app-static-v-1";
-const dynamicCacheName = "app-dynamic-cashe-1";
-const assets = [
-    "https://abdulrahmanhatem.github.io/wall-clock/",
-    "https://abdulrahmanhatem.github.io/wall-clock/index.html", 
-    "https://abdulrahmanhatem.github.io/wall-clock/fallback.html",
-    "https://abdulrahmanhatem.github.io/wall-clock/script.js", 
-    "https://abdulrahmanhatem.github.io/wall-clock/style.css", 
-    "https://abdulrahmanhatem.github.io/wall-clock/icons/volume.svg", 
-    "https://abdulrahmanhatem.github.io/wall-clock/icons/volume-slash.svg", 
-    "https://abdulrahmanhatem.github.io/wall-clock/audio/tick.mp3", 
-    "https://abdulrahmanhatem.github.io/wall-clock/audio/strike-twelve.mp3"
-];
-// install service worker for pwa 
-self.addEventListener("install", evt =>{
-    // console.log("Service worker is installed!");
-    evt.waitUntill(
-        caches.open(staticCacheName).then(cache=>{
-            cache.addAll(assets);
-        }).catch(e => console.log(e))
-    )
-})
-
-// activate service worker event 
-self.addEventListener("activate", evt=>{
-    // console.log("Service worker is activated!");
-    evt.waitUntill(
-        caches.keys().then(keys => {
-            return new Promise.all(
-                keys.filter(key => key !== staticCacheName && key !== dynamicCacheName).map(key => {
-                    caches.delete(key);
-                })
-            );
-        }).catch(e => console.log(e))
+const addResourcesToCache = async (resources) => {
+    const cache = await caches.open('v1');
+    await cache.addAll(resources);
+};
+  
+const putInCache = async (request, response) => {
+const cache = await caches.open('v1');
+await cache.put(request, response);
+};
+  
+const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
+    // First try to get the resource from the cache
+    const responseFromCache = await caches.match(request);
+    if (responseFromCache) {
+      return responseFromCache;
+    }
+  
+    // Next try to use the preloaded response, if it's there
+    // NOTE: Chrome throws errors regarding preloadResponse, see:
+    // https://bugs.chromium.org/p/chromium/issues/detail?id=1420515
+    // https://github.com/mdn/dom-examples/issues/145
+    // To avoid those errors, remove or comment out this block of preloadResponse
+    // code along with enableNavigationPreload() and the "activate" listener.
+    const preloadResponse = await preloadResponsePromise;
+    if (preloadResponse) {
+      console.info('using preload response', preloadResponse);
+      putInCache(request, preloadResponse.clone());
+      return preloadResponse;
+    }
+  
+    // Next try to get the resource from the network
+    try {
+      const responseFromNetwork = await fetch(request.clone());
+      // response may be used only once
+      // we need to save clone to put one copy in cache
+      // and serve second one
+      putInCache(request, responseFromNetwork.clone());
+      return responseFromNetwork;
+    } catch (error) {
+      const fallbackResponse = await caches.match(fallbackUrl);
+      if (fallbackResponse) {
+        return fallbackResponse;
+      }
+      // when even the fallback response is not available,
+      // there is nothing we can do, but we must always
+      // return a Response object
+      return new Response('Network error happened', {
+        status: 408,
+        headers: { 'Content-Type': 'text/plain' },
+      });
+    }
+};
+  
+const enableNavigationPreload = async () => {
+    if (self.registration.navigationPreload) {
+      // Enable navigation preloads!
+      await self.registration.navigationPreload.enable();
+    }
+};
+  
+self.addEventListener('activate', (event) => {
+    event.waitUntil(enableNavigationPreload());
+});
+  
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+      addResourcesToCache([
+        "/",
+        "/index.html", 
+        "/fallback.html",
+        "/script.js", 
+        "/style.css", 
+        "/icons/volume.svg", 
+        "/icons/volume-slash.svg", 
+        "/audio/tick.mp3", 
+        "/audio/strike-twelve.mp3"
+    ])
     );
-
-})
-
-// fetch service worker event
-self.addEventListener("fetch", evt =>{
-    // console.log("fetch event", evt );
-    evt.respondWith(
-        caches.match(evt.request)
-        .then(res => res || fetch(evt.request).then(fetchRes => {
-            return caches.open(dynamicCacheName).then(cache => {
-                cache.put(evt.request.url , fetchRes);
-                // limitCacheSize(dynamicCacheName, 15)
-                return fetchRes;
-            });
-        }))
-        .catch(() => {
-            if (evt.request.url.indexOf(".html") > -1) {
-                return caches.match("/fallback.html");
-            }
-        })
+});
+  
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+      cacheFirst({
+        request: event.request,
+        preloadResponsePromise: event.preloadResponse,
+        fallbackUrl: '/fallback.html',
+      })
     );
-})
-
-// cache zise limit function 
-const limitCacheSize = (name, size) =>{
-    caches.open(name).then(cache => {
-        cache.keys().then(keys => {
-            if (keys.length > size) {
-                cache.delete(keys[0]).then(limitCacheSize(name, size));
-            }
-        }).catch(e => console.log(e))
-    })
-}
+});

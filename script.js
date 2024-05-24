@@ -101,10 +101,10 @@ function changeAudioPermission() {
     let audioIcon = audioBox.querySelector("img");
     audioIcon.classList.toggle("active");
     if (settings.audioPermession) {
-        audioIcon.setAttribute("src", "icons/volume.png");
+        audioIcon.setAttribute("src", "icons/volume.webp");
         audioIcon.setAttribute("title", "Turn Off Audio");
     }else{
-        audioIcon.setAttribute("src", "icons/volume-slash.png");
+        audioIcon.setAttribute("src", "icons/volume-slash.webp");
         audioIcon.setAttribute("title", "Turn On Audio");       
     }
 }
