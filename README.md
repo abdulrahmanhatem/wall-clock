@@ -2,8 +2,14 @@
 
 Wall Clock is a live Clock frontend interface.
 
-## Live Wall Clock
+## Live Link
 [Live Wall Clock](https://abdulrahmanhatem.github.io/wall-clock/)
+
+## Technolgies 
+![HTML](https://abdulrahmanhatem.github.io/tech-icons/icons/html.png)
+![CSS](https://abdulrahmanhatem.github.io/tech-icons/icons/css.png)
+![Javascript](https://abdulrahmanhatem.github.io/tech-icons/icons/javascript.png)
+
 
 ## Description 
 Welcome abroad fellow developer, here you will find the details of my wall clock project story.
@@ -17,7 +23,7 @@ Here is the Design
 
 And result was like 
 
-![Before](model-after.png)
+![After](model-after.png)
 
 ### Why wall clock project ?
 
