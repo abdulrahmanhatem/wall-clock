@@ -23,7 +23,6 @@ And result would be something like
 <img src="https://abdulrahmanhatem.github.io/icons/tech/html.png" alt="HTML" align="center"> ***HTML***&ensp;
 <img src="https://abdulrahmanhatem.github.io/icons/tech//css.png" alt="CSS" align="center"> ***CSS***&ensp;<img src="https://abdulrahmanhatem.github.io/icons/tech/javascript.png" alt="Javascript" align="center"> ***Javascript***         
 
-
 ### Why wall clock project ?
 
 To improve developer's skills in writing scripts and enhance CSS skills for better UI
@@ -53,8 +52,7 @@ It can be installed from IOS and Android broswers and working normally as a regu
 
 Give it a try and install it on your device :\
 [How to install PWA on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)\
-[How to install PWA on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)\
-
+[How to install PWA on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)
 
  ## <img src="https://abdulrahmanhatem.github.io/icons/markdown/license.png" alt="License" align="center"> License
 [MIT](https://opensource.org/license/mit)
