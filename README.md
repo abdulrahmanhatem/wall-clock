@@ -54,7 +54,7 @@ It can be installed from IOS and Android broswers and working normally as a regu
 Give it a try and install it on your device : 
 [How to install PWA on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)
 
-[How to install PWA on IOS]([https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DAndroid](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS))
+[How to install PWA on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)
 
 
  ## <img src="https://abdulrahmanhatem.github.io/icons/markdown/license.png" alt="License" align="center"> License
