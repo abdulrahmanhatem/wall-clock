@@ -11,13 +11,19 @@ Welcome abroad fellow developer, here you will find the details of my wall clock
 ### <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/motivation.png" alt="Motivation" align="center"> Motivation 
 When I saw this beautiful minimalist clock design , I encouraged myself to implement it with ***HTML, CSS and Javascript***.
 
-Here is the Design 
+<table>
+<tr>
+<td>Here is the Design </td>
+<td>And result would be something like </td>
+</tr>
+<tr>
+<td>![Before](model-before.png)</td>
+<td>![After](model-after.png)</td>
+</tr>
+</table>
 
-![Before](model-before.png)
 
-And result would be something like 
 
-![After](model-after.png)
 
 ### What are the technologies you will use ? 
 <img src="https://abdulrahmanhatem.github.io/images/icons/tech/html.png" alt="HTML" align="center"> ***HTML***&ensp;
