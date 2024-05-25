@@ -54,6 +54,14 @@ Give it a try and install it on your device :\
 [Install on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)\
 [Install on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)
 
+## <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/performance.png" alt="Performance" align="center"> Performance\
+<img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-1.png" alt="Performance" align="center">
+<img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-2.png" alt="Performance" align="center">
+<img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-3.png" alt="Performance" align="center">
+
+
+
+
  ## <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/license.png" alt="License" align="center"> License
 [MIT](https://opensource.org/license/mit)
 
