@@ -13,8 +13,8 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 <table>
 <tr>
-<td>Here is the Design </td>
-<td>And result would be something like </td>
+<td>The Inspiring Design </td>
+<td>The result would be something like </td>
 </tr>
 <tr>
 <td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/></td>
