@@ -30,7 +30,7 @@ self.addEventListener('install', e => {
     return ok;
   }));
 
-  console.log('ServiceWorker installed');
+  // console.log('ServiceWorker installed');
 });
 
 // activate service worker event 
@@ -52,7 +52,7 @@ self.addEventListener("activate", event=>{
   
 // fetch service worker event
 self.addEventListener("fetch", event =>{
-  console.log("fetch event", event );
+  // console.log("fetch event", event );
   event.respondWith(
       caches.match(event.request)
       .then(res => res || fetch(event.request)

@@ -8,7 +8,7 @@ let settings = {
 
 // Show Clock if Javascript is enabled
 if (document.querySelector('.clock-frame')) {
-    document.querySelector('.clock-frame')?.style?.display = 'block';
+    document.querySelector('.clock-frame').style.display = 'block';
 }
 
 
@@ -19,7 +19,7 @@ for (let n = 0; n < 12; n++) {
     let translate = `50%,  425%`;
     // Rotate and translate number sign from the center
     number.style.transform = `rotate(${deg}deg) translate(${translate})`;
-    clockFace?.appendChild(number)
+    clockFace.appendChild(number)
 }
 
 function updateClock() {
