@@ -19,8 +19,8 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 <td>The result would be something like </td>
 </tr>
 <tr>
-<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-beforhe.png" alt="Model Before"/></td>
-<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-afther.png" alt="Model After"/></td>
+<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/></td>
+<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/></td>
 </tr>
 </table>
 </center>
