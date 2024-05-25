@@ -14,8 +14,8 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 | The Inspiring Design       | The result would be something like |
 | ---------------------------| ---------------------------------- |
-|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | 
-<img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
+|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | <img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
+
 
 ### What are the technologies you will use ? 
 <img src="https://abdulrahmanhatem.github.io/images/icons/tech/html.png" alt="HTML" align="center"> ***HTML***&ensp;
