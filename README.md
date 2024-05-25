@@ -13,8 +13,6 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 
 <div align="center">
-
-</div>
 <table>
 <tr>
 <td>The Inspiring Design </td>
@@ -25,6 +23,8 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 <td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/></td>
 </tr>
 </table>
+
+</div>
 
 
 
