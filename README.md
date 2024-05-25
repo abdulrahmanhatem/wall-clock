@@ -59,6 +59,12 @@ Give it a try and install it on your device :
 <img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-2.png" alt="Performance" align="center">
 <img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-3.png" alt="Performance" align="center">
 
+ -  <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/pass.png" alt="Performance Passed" align="center"> Performance
+ -  <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/pass.png" alt="Accessibility Passed" align="center"> Accessibility
+ -  <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/pass.png" alt="Best Practices Passed" align="center"> Best Practices
+ -  <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/pass.png" alt="SEO Passed" align="center"> SEO
+  -  <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/pass.png" alt="PWA Passed" align="center"> PWA
+
 
 
 
