@@ -50,15 +50,13 @@ self.addEventListener("activate", event=>{
   );
 })
   
-
-
 // fetch service worker event
 self.addEventListener("fetch", event =>{
-  // console.log("fetch event", event );
+  console.log("fetch event", event );
   event.respondWith(
       caches.match(event.request)
-      .then(res => res || fetch(event.request).then(fetchRes => {
-        console.log("fetchRes", fetchRes);
+      .then(res => res || fetch(event.request)
+      .then(fetchRes => {
           return caches.open(dynamicCacheName).then(cache => {
               cache.put(event.request.url , fetchRes);
               limitCacheSize(dynamicCacheName, 15)
@@ -66,7 +64,6 @@ self.addEventListener("fetch", event =>{
           });
       }))
       .catch(() => {
-        console.log(event.request.url);
           if (event.request.url.indexOf(".html") > -1) {
               return caches.match("/fallback.html");
           }
