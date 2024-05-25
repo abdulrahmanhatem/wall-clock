@@ -17,12 +17,6 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 |   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | 
 <img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
 
-
-
-
-
-
-
 ### What are the technologies you will use ? 
 <img src="https://abdulrahmanhatem.github.io/images/icons/tech/html.png" alt="HTML" align="center"> ***HTML***&ensp;
 <img src="https://abdulrahmanhatem.github.io/images/icons/tech//css.png" alt="CSS" align="center"> ***CSS***&ensp;<img src="https://abdulrahmanhatem.github.io/images/icons/tech/javascript.png" alt="Javascript" align="center"> ***Javascript***         
