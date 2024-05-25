@@ -50,11 +50,11 @@ As a frontend developer I put my HTML, CSS and Javascript skills in practice and
 Wall Clock is PWA which means it has a progressive Web App Features.
 It can be installed from Desktop, IOS and Android broswers and working normally as a regular native app.
 
-Give it a try and install it on your device :\
+Give it a try and install it on your device :
 [Install on Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop)\
 [Install on IOS](https://www.bitcot.com/how-to-install-a-pwa-to-your-device/#Installing_a_PWA_on_iOS)
 
-## <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/performance.png" alt="Performance" align="center"> Performance\
+## <img src="https://abdulrahmanhatem.github.io/images/icons/markdown/performance.png" alt="Performance" align="center"> Performance
 <img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-1.png" alt="Performance" align="center">
 <img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-2.png" alt="Performance" align="center">
 <img src="https://abdulrahmanhatem.github.io/images/images/wall-clock/performance-3.png" alt="Performance" align="center">
