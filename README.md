@@ -17,8 +17,8 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 <td>And result would be something like </td>
 </tr>
 <tr>
-<td>![Before](model-before.png)</td>
-<td>![After](model-after.png)</td>
+<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/></td>
+<td><img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/></td>
 </tr>
 </table>
 
