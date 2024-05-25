@@ -14,21 +14,10 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 | The Inspiring Design       | The result would be something like |
 | ---------------------------| ---------------------------------- |
-|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | <img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
+|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | 
+<img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
 
-<div align="center">
-<table>
-<tr>
-<td>The Inspiring Design </td>
-<td>The result would be something like </td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</table>
 
-</div>
 
 
 
