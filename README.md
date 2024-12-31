@@ -12,7 +12,7 @@ Welcome abroad fellow developer, here you will find the details of my wall clock
 When I saw this beautiful minimalist clock design , I encouraged myself to implement it with ***HTML, CSS and Javascript***.
 
 
-| The Inspiring Design       | Amazing Result |
+| The Inspiring Design       | Stunning Result |
 | ---------------------------| ---------------------------------- |
 |   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | <img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.png" alt="Model After"/> |
 
