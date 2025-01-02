@@ -14,7 +14,7 @@ When I saw this beautiful minimalist clock design , I encouraged myself to imple
 
 | The Inspiring Design       | Stunning Result |
 | ---------------------------| ---------------------------------- |
-|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | <img src="https://abdulrahmanhatem.github.io/wall-clock/model-after.gif" alt="Model After"/> |
+|   <img src="https://abdulrahmanhatem.github.io/wall-clock/model-before.png" alt="Model Before"/>                         | ![Alt text](https://abdulrahmanhatem.github.io/wall-clock/model-after.gif) |
 
 
 ### What are the technologies you will use ? 
